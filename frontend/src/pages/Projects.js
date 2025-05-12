@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "../components/utils/SectionTitle";
 import { FaGithub, FaExternalLinkAlt, FaCode, FaRobot, FaNewspaper, FaMobileAlt, FaBrain, FaServer } from "react-icons/fa";
-import SuperAgentPortfolio from "../components/projects/SuperAgentPortfolio";
 
 const Projects = () => {
   // Category filters
