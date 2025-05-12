@@ -77,13 +77,13 @@ const Projects = () => {
       featured: false,
     },
     {
-      title: "Industry 4.0 Implementation",
-      description: "Complete IoT system for manufacturing facilities that includes predictive maintenance, quality control, and production optimization.",
+      title: "AI SuperAgent Platform",
+      description: "A comprehensive platform with specialized AI agents for different industries, providing automation and intelligence across various business functions.",
       image: "https://images.unsplash.com/photo-1557264337-e8a93017fe92",
-      categories: ["Backend Services", "AI Systems"],
-      technologies: ["IoT", "Predictive Analytics", "Real-time Monitoring", "Data Visualization"],
+      categories: ["AI Systems", "Business Applications"],
+      technologies: ["Generative AI", "Natural Language Processing", "Agent Technology", "Workflow Automation"],
       links: [
-        { label: "Case Study", url: "#", icon: <FaExternalLinkAlt /> },
+        { label: "Demo", url: "#", icon: <FaExternalLinkAlt /> },
       ],
       featured: false,
     },
