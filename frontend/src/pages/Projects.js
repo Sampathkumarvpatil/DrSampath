@@ -555,21 +555,6 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* SuperAgent Portfolio Showcase */}
-      <section className="py-16 bg-light">
-        <div className="container">
-          <SectionTitle
-            subtitle="FEATURED PROJECT"
-            title="AI SuperAgent Platform"
-            description="A comprehensive suite of AI-powered agents designed for various industries and business functions."
-          />
-          
-          <div className="mt-8">
-            <SuperAgentPortfolio />
-          </div>
-        </div>
-      </section>
-
       {/* Call to Action */}
       <section className="py-16 bg-gradient-to-br from-secondary-600 to-secondary-800 text-white">
         <div className="container text-center">
