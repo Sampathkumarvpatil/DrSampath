@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from "framer-motion";
 
 const SuperAgentPortfolio = () => {
   const [activeTab, setActiveTab] = useState('hr');
@@ -125,130 +126,190 @@ const SuperAgentPortfolio = () => {
   const [showQADetails, setShowQADetails] = useState(false);
 
   // Check if we're on the QA tab and toggle details automatically
-  React.useEffect(() => {
+  useEffect(() => {
     setShowQADetails(activeTab === 'qa');
   }, [activeTab]);
 
   return (
-    <div className="bg-light">
+    <div>
       {/* Hero Section */}
-      <section className="bg-primary-600 text-white">
+      <section className="bg-primary-600 text-white rounded-xl overflow-hidden shadow-soft-xl">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-          <div className="max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-3xl"
+          >
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-6">
               Transform Your Business With AI SuperAgents
             </h1>
             <p className="text-xl opacity-90 mb-8">
               Our cutting-edge AI platform connects hundreds of specialized intelligent agents to automate workflows, enhance productivity, and deliver unparalleled business intelligence across every department.
             </p>
-            <button className="bg-white text-primary-600 hover:bg-primary-50 font-medium py-3 px-6 rounded-lg transition transform hover:scale-105">
+            <button className="bg-white text-primary-600 hover:bg-primary-50 font-medium py-3 px-6 rounded-lg transition-all transform hover:scale-105 hover:shadow-soft-lg">
               Schedule a Demo
             </button>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Main Content Section */}
-      <div className="py-12 bg-white">
+      <div className="py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Stats Section */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="bg-white text-center">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white text-center p-6 rounded-xl shadow-soft-lg hover-lift"
+            >
               <div className="text-5xl font-bold text-primary-600 mb-2">100+</div>
               <div className="text-gray-500 font-medium">AI Solutions</div>
-            </div>
-            <div className="bg-white text-center">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white text-center p-6 rounded-xl shadow-soft-lg hover-lift"
+            >
               <div className="text-5xl font-bold text-primary-600 mb-2">85%</div>
               <div className="text-gray-500 font-medium">Workflow Automation</div>
-            </div>
-            <div className="bg-white text-center">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-white text-center p-6 rounded-xl shadow-soft-lg hover-lift"
+            >
               <div className="text-5xl font-bold text-primary-600 mb-2">95%</div>
               <div className="text-gray-500 font-medium">Client Satisfaction</div>
-            </div>
-            <div className="bg-white text-center">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="bg-white text-center p-6 rounded-xl shadow-soft-lg hover-lift"
+            >
               <div className="text-5xl font-bold text-primary-600 mb-2">10x</div>
               <div className="text-gray-500 font-medium">Productivity Boost</div>
-            </div>
+            </motion.div>
           </div>
           
-          <div className="text-center mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Industry-Specific SuperAgent Solutions</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Our AI SuperAgents are specialized for diverse industry needs, delivering tailored automation and intelligence across every business vertical.
             </p>
-          </div>
+          </motion.div>
           
           {/* Industry Tabs */}
           <div className="flex justify-center flex-wrap gap-3 mb-12">
-            {['software', 'it', 'qa', 'education', 'healthcare', 'finance', 'marketing', 'food', 'agriculture', 'hr'].map(tabKey => (
-              <button
+            {['software', 'it', 'qa', 'education', 'healthcare', 'finance', 'marketing', 'food', 'agriculture', 'hr'].map((tabKey, index) => (
+              <motion.button
                 key={tabKey}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                viewport={{ once: true }}
                 onClick={() => {
                   setActiveTab(tabKey);
                   setActiveSolution(tabs[tabKey].solutions[0]);
                 }}
-                className={`px-4 py-2 rounded-full text-sm font-medium ${
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   activeTab === tabKey
-                     ? 'bg-primary-600 text-white'
-                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                } transition`}
+                     ? 'bg-primary-600 text-white shadow-soft'
+                     : 'bg-light text-gray-700 hover:bg-primary-100 hover:text-primary-700'
+                }`}
               >
                 {tabs[tabKey].title}
-              </button>
+              </motion.button>
             ))}
           </div>
           
           {/* Featured Solution */}
-          <div className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="mb-16 bg-white p-8 rounded-xl shadow-soft-lg"
+          >
             <h3 className="text-xl font-bold text-gray-900 mb-4">{activeSolution.title}</h3>
             <p className="text-gray-600 mb-4">{activeSolution.description}</p>
             <div className="flex justify-between items-center">
               <span className="text-primary-600 text-sm font-medium">{activeSolution.category}</span>
-              <a href="#" className="text-gray-700 hover:text-primary-600 text-sm font-medium flex items-center">
+              <a href="#" className="text-gray-700 hover:text-primary-600 text-sm font-medium flex items-center transition-colors">
                 Learn more →
               </a>
             </div>
-          </div>
+          </motion.div>
           
           {/* Other Solutions Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tabs[activeTab].solutions.slice(1).map((solution, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition transform hover:-translate-y-1 cursor-pointer" onClick={() => setActiveSolution(solution)}>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: index * 0.1 % 0.5 }}
+                viewport={{ once: true }}
+                className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift cursor-pointer"
+                onClick={() => setActiveSolution(solution)}
+              >
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">{solution.title}</h3>
                   <p className="text-gray-600 mb-4">{solution.description}</p>
                 </div>
-                <div className="px-6 py-4 bg-gray-100 flex justify-between items-center">
+                <div className="px-6 py-4 bg-light-dark flex justify-between items-center">
                   <span className="text-primary-600 text-sm font-medium">{solution.category}</span>
-                  <a href="#" className="text-gray-700 hover:text-primary-600 text-sm font-medium flex items-center">
+                  <a href="#" className="text-gray-700 hover:text-primary-600 text-sm font-medium flex items-center transition-colors">
                     Learn more →
                   </a>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           
           {/* QA-specific "How It Works" section - only shown when QA tab is active */}
           {showQADetails && (
-            <div className="mt-16 bg-white rounded-xl shadow-md overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-16 bg-white rounded-xl shadow-soft-xl overflow-hidden"
+            >
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">How It Works</h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                  <div className="bg-purple-50 p-6 rounded-lg relative">
-                    <div className="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-4 -left-4">1</div>
+                  <div className="bg-primary-50 p-6 rounded-xl relative hover-lift">
+                    <div className="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-4 -left-4 shadow-soft">1</div>
                     <h4 className="font-bold text-gray-900 mb-3 mt-2">Write test requirements in plain English</h4>
                     <p className="text-gray-700">Describe your API test scenario using natural language, including details like user count, duration, and metrics to monitor.</p>
                   </div>
                   
-                  <div className="bg-purple-50 p-6 rounded-lg relative">
-                    <div className="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-4 -left-4">2</div>
+                  <div className="bg-primary-50 p-6 rounded-xl relative hover-lift">
+                    <div className="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-4 -left-4 shadow-soft">2</div>
                     <h4 className="font-bold text-gray-900 mb-3 mt-2">AI translates your description into optimized test scenarios</h4>
                     <p className="text-gray-700">Our AI engine converts your natural language instructions into efficient, optimized test cases designed for maximum performance.</p>
                   </div>
                   
-                  <div className="bg-purple-50 p-6 rounded-lg relative">
-                    <div className="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-4 -left-4">3</div>
+                  <div className="bg-primary-50 p-6 rounded-xl relative hover-lift">
+                    <div className="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl absolute -top-4 -left-4 shadow-soft">3</div>
                     <h4 className="font-bold text-gray-900 mb-3 mt-2">View detailed performance metrics and insights</h4>
                     <p className="text-gray-700">Receive comprehensive reports with visualizations showing response times, throughput, error rates, and system performance during the test.</p>
                   </div>
@@ -257,9 +318,9 @@ const SuperAgentPortfolio = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Example Test Scenarios</h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                  <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-primary-600">
+                  <div className="bg-light p-6 rounded-xl border-l-4 border-primary-600 hover-lift">
                     <h4 className="font-bold text-gray-900 mb-3">Load Testing</h4>
-                    <div className="bg-gray-100 p-4 rounded mb-4 text-sm text-gray-700 font-mono">
+                    <div className="bg-light-dark p-4 rounded-lg mb-4 text-sm text-gray-700 font-mono">
                       "Run load test for login API with:<br/>
                       - 1000 concurrent users<br/>
                       - 5 minute duration<br/>
@@ -269,9 +330,9 @@ const SuperAgentPortfolio = () => {
                     <p className="text-gray-700">This test simulates 1000 concurrent users accessing your login API over 5 minutes, measuring response times and generating a detailed performance report.</p>
                   </div>
                   
-                  <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-primary-600">
+                  <div className="bg-light p-6 rounded-xl border-l-4 border-primary-600 hover-lift">
                     <h4 className="font-bold text-gray-900 mb-3">Stress Testing</h4>
-                    <div className="bg-gray-100 p-4 rounded mb-4 text-sm text-gray-700 font-mono">
+                    <div className="bg-light-dark p-4 rounded-lg mb-4 text-sm text-gray-700 font-mono">
                       "Execute stress test with:<br/>
                       - Start at 100 users<br/>
                       - Increase by 100 every minute<br/>
@@ -281,9 +342,9 @@ const SuperAgentPortfolio = () => {
                     <p className="text-gray-700">This test gradually increases load on your system until performance degradation occurs, helping identify your system's breaking point.</p>
                   </div>
                   
-                  <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-primary-600">
+                  <div className="bg-light p-6 rounded-xl border-l-4 border-primary-600 hover-lift">
                     <h4 className="font-bold text-gray-900 mb-3">End-to-End Flow Testing</h4>
-                    <div className="bg-gray-100 p-4 rounded mb-4 text-sm text-gray-700 font-mono">
+                    <div className="bg-light-dark p-4 rounded-lg mb-4 text-sm text-gray-700 font-mono">
                       "Test complete checkout flow:<br/>
                       - 1000 users browsing products<br/>
                       - 500 users adding to cart<br/>
@@ -293,9 +354,9 @@ const SuperAgentPortfolio = () => {
                     <p className="text-gray-700">This test simulates a real-world e-commerce scenario with users at different stages of the purchasing process, helping identify bottlenecks in your checkout flow.</p>
                   </div>
                   
-                  <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-primary-600">
+                  <div className="bg-light p-6 rounded-xl border-l-4 border-primary-600 hover-lift">
                     <h4 className="font-bold text-gray-900 mb-3">API Endpoint Validation</h4>
-                    <div className="bg-gray-100 p-4 rounded mb-4 text-sm text-gray-700 font-mono">
+                    <div className="bg-light-dark p-4 rounded-lg mb-4 text-sm text-gray-700 font-mono">
                       "Validate user registration API:<br/>
                       - Test with valid and invalid inputs<br/>
                       - Check response codes and messages<br/>
@@ -307,107 +368,190 @@ const SuperAgentPortfolio = () => {
                 </div>
                 
                 <div className="text-center">
-                  <button className="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition transform hover:scale-105">
+                  <button className="btn btn-primary py-3 px-6 transform hover:scale-105">
                     Try QA Testing Now
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           )}
         </div>
       </div>
 
       {/* AI MeetSuperAgent Featured Section */}
-      <section className="py-16 bg-light">
+      <section className="py-16 bg-light rounded-xl shadow-soft-lg my-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
             <span className="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Featured Product</span>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">AI MeetSuperAgent</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               The world's first AI meeting agent that seamlessly joins virtual meetings, responds in real-time using your voice profile, adapts intelligently to conversational context, and connects to hundreds of SuperAgents simultaneously.
             </p>
-          </div>
+          </motion.div>
           
-          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+          <div className="bg-white rounded-xl shadow-soft-lg overflow-hidden">
             <div className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Key Features</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Smart Navigation</h4>
                   <p className="text-gray-700">Seamlessly switch between "AI Meeting Assistant" and "AI Meeting Bot" interface modes for different meeting contexts.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.15 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Multi-Agent Management</h4>
                   <p className="text-gray-700">Can create, add, name, rename or delete up to 100+ agents that can join meetings simultaneously across your organization.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Advanced Agent Configuration</h4>
                   <p className="text-gray-700">For each agent, specify meeting title, phone number, meeting PIN and optional custom prompt to control behavior and responses.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.25 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Intelligent Call Control</h4>
                   <p className="text-gray-700">Easily initiate calls via Bland.ai with automatic PIN entry using DTMF and end calls on demand with one click.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.3 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Comprehensive Call Logs</h4>
                   <p className="text-gray-700">View scrollable, timestamped logs of all call events and statuses for complete meeting audit trails.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.35 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Dynamic Transcript Display</h4>
                   <p className="text-gray-700">Watch real-time transcript panels showing speaker labels and conversation bubbles as the meeting progresses.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.4 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Intelligent Auto Summary</h4>
                   <p className="text-gray-700">Automatically generates structured meeting summaries with Overview, Key Points, Action Items, and Next Steps.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.45 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Flexible Export Options</h4>
                   <p className="text-gray-700">One-click clear or TXT-export functionality for both transcripts and summaries to integrate with other tools.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.5 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Seamless Persistence</h4>
                   <p className="text-gray-700">Save agent configurations locally (IndexedDB) and load/delete them from an intuitive "Saved Agents" modal interface.</p>
-                </div>
+                </motion.div>
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.55 }}
+                  viewport={{ once: true }}
+                  className="bg-light p-4 rounded-lg hover-lift"
+                >
                   <h4 className="font-semibold text-primary-700 mb-2">Unlimited Cloud Storage</h4>
                   <p className="text-gray-700">Forever meeting storage through AWS cloud with the ability to retrieve any stored meeting information anytime, from anywhere.</p>
-                </div>
+                </motion.div>
               </div>
               
-              <div className="mt-8 text-center">
-                <button className="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition transform hover:scale-105">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="mt-8 text-center"
+              >
+                <button className="btn btn-primary py-3 px-6 transform hover:scale-105">
                   Try AI MeetSuperAgent Now
                 </button>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
       {/* SuperAgent Automation Terminal for QA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white rounded-xl shadow-soft-lg mb-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
             <span className="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">QA Engineering Tool</span>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">SuperAgent Automation Terminal</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               A specialized testing interface that enables QA engineers to automate testing workflows using simple natural language commands, eliminating the need for complex test scripts.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="bg-black rounded-lg overflow-hidden shadow-md">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="bg-black rounded-lg overflow-hidden shadow-soft-lg">
                 <div className="flex items-center bg-gray-800 px-4 py-2">
                   <div className="flex space-x-2 mr-4">
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -432,41 +576,46 @@ const SuperAgentPortfolio = () => {
                   <div className="text-gray-400 ml-2">Test report saved to ./reports/login_test_05112025.html</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
             
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
               <h3 className="text-xl font-bold text-gray-900 mb-4">QA Features</h3>
               <div className="space-y-4">
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-light p-4 rounded-lg hover-lift">
                   <h4 className="font-semibold text-primary-700 mb-1">Natural Language Test Creation</h4>
                   <p className="text-gray-700">Write tests in plain English sentences that automatically get translated into executable test steps without coding.</p>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-light p-4 rounded-lg hover-lift">
                   <h4 className="font-semibold text-primary-700 mb-1">Cross-Browser & Cross-Platform</h4>
                   <p className="text-gray-700">Execute the same NLP test commands across multiple browsers, devices, and operating systems simultaneously.</p>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-light p-4 rounded-lg hover-lift">
                   <h4 className="font-semibold text-primary-700 mb-1">Visual Regression Testing</h4>
                   <p className="text-gray-700">Automatically detect UI changes with pixel-perfect comparisons triggered by simple natural language commands.</p>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-light p-4 rounded-lg hover-lift">
                   <h4 className="font-semibold text-primary-700 mb-1">AI-Powered Test Maintenance</h4>
                   <p className="text-gray-700">Tests automatically adapt to minor UI changes, reducing maintenance overhead and test flakiness.</p>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-light p-4 rounded-lg hover-lift">
                   <h4 className="font-semibold text-primary-700 mb-1">Continuous Integration</h4>
                   <p className="text-gray-700">Seamlessly integrate with CI/CD pipelines via CLI commands for automated testing in your deployment workflow.</p>
                 </div>
               </div>
               <div className="mt-6">
-                <a href="#" className="text-primary-600 font-medium hover:text-primary-700 flex items-center">
+                <a href="#" className="text-primary-600 font-medium hover:text-primary-700 flex items-center transition-colors">
                   View QA Terminal Documentation
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
