@@ -15,8 +15,8 @@ const Footer = () => {
       { name: "Contact", to: "/contact" },
     ],
     social: [
-      { name: "LinkedIn", href: "#", icon: <FaLinkedin /> },
-      { name: "Twitter", href: "#", icon: <FaTwitter /> },
+      { name: "LinkedIn", href: "https://www.linkedin.com/in/dr-sampathkumar-v-patil-80a6941b2", icon: <FaLinkedin /> },
+      { name: "Facebook", href: "https://www.facebook.com/share/16bX5FpvGL/?mibextid=wwXIfr", icon: <FaTwitter /> },
       { name: "GitHub", href: "#", icon: <FaGithub /> },
       { name: "Email", href: "mailto:drsampathkumarpatil@gmail.com", icon: <FaEnvelope /> },
       { name: "Phone", href: "tel:+919353391603", icon: <FaPhone /> },
