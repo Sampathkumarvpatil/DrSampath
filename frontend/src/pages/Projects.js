@@ -11,7 +11,7 @@ const Projects = () => {
       <section className="relative py-20 bg-gradient-to-r from-dark to-dark-light overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-30">
           <img
-            src="https://images.unsplash.com/photo-1557264337-e8a93017fe92"
+            src="https://images.pexels.com/photos/2182863/pexels-photo-2182863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Projects Background"
             className="w-full h-full object-cover"
           />
