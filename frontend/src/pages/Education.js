@@ -47,28 +47,28 @@ const Education = () => {
   // Certifications data
   const certifications = [
     {
-      title: "Advanced AI Engineering",
-      issuer: "Renowned Institution",
+      title: "AWS Certified Solutions Architect - Professional",
+      issuer: "Amazon Web Services",
       year: "2023",
-      description: "Specialized training in cutting-edge AI engineering techniques",
+      description: "Advanced certification for designing distributed applications and systems on the AWS platform with expertise in architectural best practices.",
     },
     {
-      title: "Machine Learning Specialization",
-      issuer: "Top Tech Company",
+      title: "AWS Certified DevOps Engineer - Professional",
+      issuer: "Amazon Web Services",
+      year: "2023",
+      description: "Professional-level certification validating expertise in implementing CI/CD systems and automation on AWS cloud platforms.",
+    },
+    {
+      title: "AWS Certified Security - Specialty",
+      issuer: "Amazon Web Services",
       year: "2022",
-      description: "Comprehensive training in ML algorithms and implementations",
+      description: "Specialized certification demonstrating expertise in cloud security, including data protection, encryption, and secure infrastructure design.",
     },
     {
-      title: "Cloud AI Infrastructure",
-      issuer: "Leading Cloud Provider",
-      year: "2021",
-      description: "Expert-level certification in cloud-based AI infrastructure",
-    },
-    {
-      title: "Natural Language Processing",
-      issuer: "AI Research Institute",
-      year: "2020",
-      description: "Advanced techniques in NLP and language model development",
+      title: "AWS Certified Solutions Architect - Associate",
+      issuer: "Amazon Web Services",
+      year: "2022",
+      description: "Certification validating ability to design available, cost-efficient, fault-tolerant, and scalable distributed systems on AWS.",
     },
   ];
 
