@@ -488,29 +488,6 @@ const Achievements = () => {
                 </div>
               </div>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift"
-            >
-              <div className="h-48 bg-accent-100 flex items-center justify-center">
-                <FaRocket className="text-accent-500 text-6xl" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Rapid Development Excellence</h3>
-                <p className="text-gray-600 mb-4">
-                  Recognized for establishing new benchmarks in development speed 
-                  while maintaining exceptional quality standards.
-                </p>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-500">2022</span>
-                  <span className="text-accent-600">Industry Recognition</span>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
