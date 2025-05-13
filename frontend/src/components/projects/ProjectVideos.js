@@ -138,10 +138,10 @@ const ProjectVideos = ({ activeTab }) => {
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Demo Videos</h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Watch our SuperAgents in action to see how they streamline workflows and deliver exceptional results in the {activeTab === 'software' ? 'Software Development' : 
-              activeTab === 'qa' ? 'Quality Assurance' : 
-              activeTab === 'education' ? 'Education' : 
-              activeTab === 'marketing' ? 'Marketing' : 'Technology'} domain.
+            Watch our SuperAgents in action to see how they streamline workflows and deliver exceptional results in the {videoCategory === 'software' ? 'Software Development' : 
+              videoCategory === 'qa' ? 'Quality Assurance' : 
+              videoCategory === 'education' ? 'Education' : 
+              videoCategory === 'marketing' ? 'Marketing' : 'Technology'} domain.
           </p>
         </motion.div>
 
