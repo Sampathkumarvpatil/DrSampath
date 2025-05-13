@@ -52,8 +52,8 @@ const Experience = () => {
       duration: "Jan'18 - Oct'18",
       responsibilities: [
         "Directed engineering operations & team leadership",
-        "Established technical strategies and implementation roadmaps",
-        "Managed product development lifecycle and quality assurance",
+        "Established technical strategies & roadmaps",
+        "Managed product development lifecycle",
         "Implemented agile methodologies and DevOps practices",
         "Oversaw technical architecture and platform decisions"
       ],
