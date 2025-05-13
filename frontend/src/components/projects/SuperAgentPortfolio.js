@@ -169,7 +169,6 @@ const SuperAgentPortfolio = () => {
                   alt="AI Technology" 
                   className="w-96 h-80 object-cover rounded-2xl shadow-2xl relative z-10 border-2 border-white/30"
                 />
-                />
                 <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-white/20 rounded-full blur-lg"></div>
               </div>
             </motion.div>
