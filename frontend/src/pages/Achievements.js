@@ -448,6 +448,13 @@ const Achievements = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Indian Achievers Award</h3>
+                <div className="mb-4 flex justify-center">
+                  <img 
+                    src="https://phdcertificates.s3.eu-north-1.amazonaws.com/achievers+award.jpeg" 
+                    alt="Indian Achievers Award Certificate" 
+                    className="max-w-full h-auto rounded-lg shadow-md border-2 border-primary-100 hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 <p className="text-gray-600 mb-4">
                   Recognized alongside Dr. Sanjeev Kuwadekar for creating the fastest growing 
                   solutions in AI/ML technology.
