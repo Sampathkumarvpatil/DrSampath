@@ -252,12 +252,12 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   {contactInfo.map((item, index) => (
-                    <div key={index} className="flex items-start">
+                    <div key={index} className="flex items-start mb-5">
                       <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-4 flex-shrink-0">
                         {item.icon}
                       </div>
-                      <div>
-                        <h3 className="font-semibold text-gray-800">{item.title}</h3>
+                      <div className="flex-1">
+                        <h3 className="font-semibold text-gray-800 mb-1">{item.title}</h3>
                         {item.link ? (
                           <a
                             href={item.link}
