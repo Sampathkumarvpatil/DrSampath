@@ -284,8 +284,8 @@ const Education = () => {
         <div className="container">
           <SectionTitle
             subtitle="PROFESSIONAL DEVELOPMENT"
-            title="Certifications & Additional Training"
-            description="Continuous learning through specialized certifications and professional development."
+            title="AWS Cloud Certifications"
+            description="Advanced AWS cloud certifications demonstrating expertise in cloud architecture, security, and DevOps."
           />
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
