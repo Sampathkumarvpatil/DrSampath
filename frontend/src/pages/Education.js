@@ -114,20 +114,20 @@ const Education = () => {
             description="My educational journey demonstrates a consistent track record of excellence and achievement."
           />
 
-          <div className="mt-12 overflow-x-auto">
-            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden border-collapse">
+          <div className="mt-12">
+            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden">
               <thead>
                 <tr>
-                  <th className="px-6 py-5 bg-primary-600 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                  <th className="px-6 py-4 bg-primary-100 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Degree
                   </th>
-                  <th className="px-6 py-5 bg-primary-500 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                  <th className="px-6 py-4 bg-primary-200 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Institution
                   </th>
-                  <th className="px-6 py-5 bg-primary-400 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                  <th className="px-6 py-4 bg-primary-300 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Year
                   </th>
-                  <th className="px-6 py-5 bg-primary-300 text-left text-sm font-semibold text-gray-800 uppercase tracking-wider">
+                  <th className="px-6 py-4 bg-primary-400 text-left text-sm font-semibold text-white uppercase tracking-wider">
                     Achievements
                   </th>
                 </tr>
@@ -140,18 +140,18 @@ const Education = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className={index % 2 === 0 ? "bg-light" : "bg-white"}
+                    className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}
                   >
-                    <td className="px-6 py-5 text-base font-medium text-gray-900 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base font-medium text-gray-900">
                       {edu.degree}
                     </td>
-                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base text-gray-700">
                       {edu.institution}
                     </td>
-                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-center text-base text-gray-700">
                       {edu.year}
                     </td>
-                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base text-gray-700">
                       {edu.achievements}
                     </td>
                   </motion.tr>
