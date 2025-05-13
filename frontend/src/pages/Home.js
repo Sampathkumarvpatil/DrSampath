@@ -26,8 +26,8 @@ const Home = () => {
 
   // Contact information
   const contactInfo = {
-    email: "contact@example.com",
-    phone: "+1 (234) 567-890",
+    email: "drsampathkumarpatil@gmail.com",
+    phone: "+919353391603",
     social: [
       { name: "LinkedIn", icon: <FaLinkedin className="text-xl" />, href: "#" },
       { name: "Twitter", icon: <FaTwitter className="text-xl" />, href: "#" },
