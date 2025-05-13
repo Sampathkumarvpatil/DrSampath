@@ -193,11 +193,16 @@ const Achievements = () => {
               </p>
 
               <div className="mb-6 flex justify-center">
-                <img 
-                  src="https://phdcertificates.s3.eu-north-1.amazonaws.com/world+record.jpeg" 
-                  alt="World Record Certificate" 
-                  className="w-4/5 h-auto rounded-lg shadow-md border-2 border-primary-100 hover:scale-105 transition-transform duration-300"
-                />
+                <div className="relative w-4/5 shadow-lg border-2 border-primary-200 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                  <img 
+                    src="https://phdcertificates.s3.eu-north-1.amazonaws.com/world+record.jpeg" 
+                    alt="World Record Certificate" 
+                    className="w-full h-auto"
+                  />
+                  <div className="absolute top-0 right-0 bg-primary-600 text-white px-3 py-1 text-xs font-bold rounded-bl-md">
+                    World Record
+                  </div>
+                </div>
               </div>
 
               <div className="grid grid-cols-2 gap-4 mb-6">
