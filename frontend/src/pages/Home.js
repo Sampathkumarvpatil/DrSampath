@@ -484,9 +484,9 @@ const Home = () => {
                   <span className="px-3 py-1 bg-primary-100 text-primary-800 text-xs font-semibold rounded-full">World Record</span>
                   <span className="ml-2 text-gray-400 text-sm">2023</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Unprecedented AI-Assisted Content Creation</h3>
+                <h3 className="text-xl font-bold mb-3">Unprecedented AI Features</h3>
                 <p className="text-gray-600 mb-4">
-                  Created 35 AI-assisted news channels, 100+ applications, and 2500+ blogs in just 3 months, 
+                  Created 35 AI-assisted news broadcasts, 100+ applications, and 2500+ blogs in just 3 months, 
                   setting a new standard for AI-powered productivity.
                 </p>
                 <Link to="/achievements" className="text-primary-600 hover:text-primary-800 font-medium flex items-center">
