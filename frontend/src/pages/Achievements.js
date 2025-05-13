@@ -558,15 +558,15 @@ const Achievements = () => {
                 </div>
               </div>
               <p className="italic mb-6">
-                "Dr. Patil's AI Superagent is a practical and forward-thinking solution. During the demo, I found it highly relevant and beneficial for real-world delivery environments."
+                "Dr. Patil's AI Superagent is a practical, forward-thinking, and well-engineered solution. During the demo, I found it highly relevant, thoughtfully designed, and beneficial for real-world delivery environments."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                  <span className="text-lg font-bold">MS</span>
+                  <span className="text-lg font-bold">SM</span>
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-bold">Meghana</h4>
-                  <p className="text-sm text-light-dark">Sr Developer, Google</p>
+                  <h4 className="font-bold">Soumen M</h4>
+                  <p className="text-sm text-light-dark">Sr. Developer</p>
                 </div>
               </div>
             </motion.div>
