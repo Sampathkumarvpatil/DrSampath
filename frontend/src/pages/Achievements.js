@@ -9,7 +9,7 @@ const Achievements = () => {
   // Achievements data
   const achievements = [
     {
-      title: "Global AI Benchmark",
+      title: "World Record",
       year: "2023",
       description: "Created 35 AI-assisted News Broadcasts, 100+ apps, 2500+ blogs in 3 months",
       impact: "Featured in multiple publications and record books",
