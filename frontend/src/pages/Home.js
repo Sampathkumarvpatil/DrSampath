@@ -82,7 +82,7 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="text-gray-300 text-lg max-w-lg mb-8"
               >
-                Business Unit Head & GenAI Principal Lead Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions.
+                Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
