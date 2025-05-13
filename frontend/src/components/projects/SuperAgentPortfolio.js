@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
+import ProjectVideos from './ProjectVideos';
 
 const SuperAgentPortfolio = () => {
   const [activeTab, setActiveTab] = useState('hr');
