@@ -379,7 +379,7 @@ const Home = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-soft-xl hover-lift"
+              className="bg-white rounded-xl overflow-hidden shadow-soft-xl hover-lift transform transition-all duration-300 hover:-translate-y-2"
             >
               <div className="relative overflow-hidden h-64 bg-primary-50 p-4 flex items-center justify-center">
                 <img
