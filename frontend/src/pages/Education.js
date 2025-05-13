@@ -115,19 +115,19 @@ const Education = () => {
           />
 
           <div className="mt-12 overflow-x-auto">
-            <table className="min-w-full bg-white shadow-soft-lg rounded-xl overflow-hidden">
-              <thead className="bg-primary-50">
+            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden border-collapse">
+              <thead className="bg-gradient-to-r from-primary-600 to-primary-700">
                 <tr>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Degree
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Institution
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Year
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Achievements
                   </th>
                 </tr>
@@ -142,16 +142,16 @@ const Education = () => {
                     viewport={{ once: true }}
                     className="hover:bg-primary-50 transition-colors"
                   >
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    <td className="px-6 py-5 whitespace-nowrap text-base font-medium text-gray-900 border-b border-gray-100">
                       {edu.degree}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
                       {edu.institution}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
                       {edu.year}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
                       {edu.achievements}
                     </td>
                   </motion.tr>
