@@ -2,6 +2,73 @@ import React, { useRef, useState } from 'react';
 import { motion } from "framer-motion";
 
 const ProjectVideos = ({ activeTab }) => {
+  // Track which video is currently playing
+  const [playingVideoIndex, setPlayingVideoIndex] = useState(null);
+  // Refs to keep track of video elements
+  const videoRefs = useRef({});
+
+  // Handler for playing/pausing videos
+  const handlePlayButtonClick = (index) => {
+    const videoElement = videoRefs.current[index];
+    if (!videoElement) return;
+    
+    if (videoElement.paused) {
+      // Pause all videos first
+      Object.values(videoRefs.current).forEach(vid => {
+        if (vid && !vid.paused) vid.pause();
+      });
+      
+      // Play this video
+      videoElement.play()
+        .then(() => {
+          setPlayingVideoIndex(index);
+        })
+        .catch(error => {
+          console.error('Error playing video:', error);
+        });
+    } else {
+      videoElement.pause();
+      setPlayingVideoIndex(null);
+    }
+  };
+
+  // Video player component
+  const VideoPlayer = ({ video, index }) => {
+    const handleVideoRef = (element) => {
+      if (element) {
+        videoRefs.current[index] = element;
+      }
+    };
+
+    return (
+      <div 
+        className="aspect-w-16 relative group video-container cursor-pointer" 
+        onClick={() => handlePlayButtonClick(index)}
+      >
+        <video 
+          ref={handleVideoRef}
+          className="w-full h-full object-cover"
+          preload="metadata"
+          controls={playingVideoIndex === index}
+          poster={playingVideoIndex === index ? "" : "https://images.unsplash.com/photo-1557264337-e8a93017fe92"}
+          onEnded={() => setPlayingVideoIndex(null)}
+        >
+          <source src={video.url} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {playingVideoIndex !== index && (
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-center group-hover:opacity-80">
+            <div className="w-20 h-20 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-primary-600/80 transition-all duration-300">
+              <svg className="w-12 h-12 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   // Video data organized by tab/category
   const videosByCategory = {
     software: [
