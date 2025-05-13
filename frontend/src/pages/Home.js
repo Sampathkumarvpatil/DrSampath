@@ -2,11 +2,39 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaGithub, FaTwitter, FaChevronDown } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaChevronDown, FaEnvelope, FaPhone } from "react-icons/fa";
 import SectionTitle from "../components/utils/SectionTitle";
 import AnimatedCounter from "../components/utils/AnimatedCounter";
 
 const Home = () => {
+  // Personal details
+  const personalInfo = {
+    name: "Dr. Sampath V. Patil",
+    title: "GenAI Principal Lead & Business Unit Head",
+    bio: "I am a visionary AI/ML leader with multiple doctoral qualifications and a record of groundbreaking achievements in artificial intelligence. My expertise spans AI architecture, rapid application development, and business unit leadership. I specialize in creating innovative solutions that leverage the power of generative AI to transform businesses and industries.",
+    vision: "My vision is to democratize AI technology by making sophisticated artificial intelligence accessible and impactful for organizations of all sizes. I believe in using AI as a force multiplier for human creativity and problem-solving capabilities.",
+    philosophy: "I approach technology leadership with a philosophy that balances innovation with practical implementation. My work is guided by a commitment to ethical AI development and a focus on creating solutions that deliver measurable business value while pushing the boundaries of what's possible.",
+    expertise: [
+      "GenAI Implementation",
+      "AI/ML Architecture", 
+      "Rapid Application Development", 
+      "Business Unit Management", 
+      "Innovation Leadership",
+      "AI Meeting Superagent Development"
+    ]
+  };
+
+  // Contact information
+  const contactInfo = {
+    email: "contact@example.com",
+    phone: "+1 (234) 567-890",
+    social: [
+      { name: "LinkedIn", icon: <FaLinkedin className="text-xl" />, href: "#" },
+      { name: "Twitter", icon: <FaTwitter className="text-xl" />, href: "#" },
+      { name: "GitHub", icon: <FaGithub className="text-xl" />, href: "#" },
+    ]
+  };
+
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -38,7 +66,7 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4"
               >
-                Dr. Sampath V. Patil
+                {personalInfo.name}
               </motion.h1>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -46,7 +74,7 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="text-2xl md:text-3xl font-medium mb-6 text-gradient"
               >
-                GenAI Principal Lead & Business Unit Head
+                {personalInfo.title}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -82,30 +110,17 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.7 }}
                 className="flex mt-8 justify-center md:justify-start space-x-4"
               >
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors text-xl"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors text-xl"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors text-xl"
-                >
-                  <FaTwitter />
-                </a>
+                {contactInfo.social.map((platform, index) => (
+                  <a
+                    key={index}
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {platform.icon}
+                  </a>
+                ))}
               </motion.div>
             </motion.div>
 
@@ -138,8 +153,107 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* About Section */}
       <section className="py-16 bg-light">
+        <div className="container">
+          <SectionTitle
+            subtitle="ABOUT ME"
+            title="Vision & Philosophy"
+            description="The core principles and vision that guide my professional journey."
+          />
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-xl p-8 shadow-soft-lg hover-lift"
+            >
+              <h3 className="text-2xl font-bold mb-4">Vision</h3>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                {personalInfo.vision}
+              </p>
+              <div className="pt-4 border-t border-gray-200">
+                <h4 className="font-semibold mb-3">Strategic Goals:</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-primary-500 mr-2">✓</span>
+                    <span className="text-gray-700">Democratize access to advanced AI technologies</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-500 mr-2">✓</span>
+                    <span className="text-gray-700">Bridge the gap between research and practical implementation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-500 mr-2">✓</span>
+                    <span className="text-gray-700">Accelerate digital transformation through AI innovation</span>
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-xl p-8 shadow-soft-lg hover-lift"
+            >
+              <h3 className="text-2xl font-bold mb-4">Philosophy</h3>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                {personalInfo.philosophy}
+              </p>
+              <div className="pt-4 border-t border-gray-200">
+                <h4 className="font-semibold mb-3">Core Principles:</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-primary-500 mr-2">✓</span>
+                    <span className="text-gray-700">Ethical AI development with human-centered design</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-500 mr-2">✓</span>
+                    <span className="text-gray-700">Balance innovation with practical business application</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-500 mr-2">✓</span>
+                    <span className="text-gray-700">Continuous learning and knowledge sharing</span>
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+          </div>
+          
+          <div className="mt-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-xl p-8 shadow-soft-lg"
+            >
+              <h3 className="text-2xl font-bold mb-6 text-center">Areas of Expertise</h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                {personalInfo.expertise.map((skill, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="px-6 py-3 bg-primary-100 text-primary-800 rounded-full text-base font-medium hover-lift"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-white">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <motion.div
@@ -237,7 +351,7 @@ const Home = () => {
               className="glass p-8 rounded-xl hover-lift"
             >
               <h3 className="text-xl font-bold mb-2">Ph.D. in AI and Machine Learning</h3>
-              <p className="text-light-dark mb-4">University Name, 2015-2019</p>
+              <p className="text-light-dark mb-4">VTU University, Belgaum, Karnataka, 2015-2019</p>
               <p className="text-sm">Youngest Ph.D. holder in the field, with groundbreaking research in AI applications.</p>
             </motion.div>
           </div>
@@ -329,73 +443,79 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Experience Preview */}
-      <section className="py-16 bg-light-dark">
+      {/* Contact Info */}
+      <section className="py-16 bg-light">
         <div className="container">
           <SectionTitle
-            subtitle="PROFESSIONAL JOURNEY"
-            title="Leadership Experience"
-            description="A track record of driving innovation and leading high-performing teams across multiple organizations."
+            subtitle="GET IN TOUCH"
+            title="Contact Information"
+            description="Let's discuss how we can collaborate on your next AI project."
           />
 
-          <div className="mt-10 relative">
-            {/* Timeline line */}
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-primary-200"></div>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-white p-6 rounded-xl shadow-soft-lg hover-lift text-center"
+            >
+              <div className="w-16 h-16 mx-auto bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                <FaEnvelope className="text-primary-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Email</h3>
+              <a href={`mailto:${contactInfo.email}`} className="text-primary-600 hover:text-primary-800 transition-colors">
+                {contactInfo.email}
+              </a>
+            </motion.div>
 
-            {/* Experience items */}
-            <div className="space-y-12">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                className="flex flex-col md:flex-row items-center"
-              >
-                <div className="md:w-1/2 md:pr-12 md:text-right">
-                  <div className="bg-white p-6 rounded-xl shadow-soft-lg">
-                    <h3 className="text-xl font-bold">Business Unit Head & GenAI Principal Lead</h3>
-                    <p className="text-primary-600 mb-2">Ciklum</p>
-                    <p className="text-gray-500 text-sm mb-3">Feb 2024 - Present</p>
-                    <p className="text-gray-600">
-                      Leading strategic direction for GenAI solutions and managing business unit operations.
-                    </p>
-                  </div>
-                </div>
-                <div className="hidden md:block w-10 h-10 rounded-full bg-primary-100 border-4 border-white flex items-center justify-center z-10">
-                  <div className="w-3 h-3 rounded-full bg-primary-600"></div>
-                </div>
-                <div className="md:w-1/2 md:pl-12 mt-4 md:mt-0"></div>
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white p-6 rounded-xl shadow-soft-lg hover-lift text-center"
+            >
+              <div className="w-16 h-16 mx-auto bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                <FaPhone className="text-primary-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Phone</h3>
+              <a href={`tel:${contactInfo.phone.replace(/\s+/g, '')}`} className="text-primary-600 hover:text-primary-800 transition-colors">
+                {contactInfo.phone}
+              </a>
+            </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="flex flex-col md:flex-row items-center"
-              >
-                <div className="md:w-1/2 md:pr-12"></div>
-                <div className="hidden md:block w-10 h-10 rounded-full bg-primary-100 border-4 border-white flex items-center justify-center z-10">
-                  <div className="w-3 h-3 rounded-full bg-primary-600"></div>
-                </div>
-                <div className="md:w-1/2 md:pl-12 md:text-left">
-                  <div className="bg-white p-6 rounded-xl shadow-soft-lg">
-                    <h3 className="text-xl font-bold">Business Unit Head & GenAI Principal Lead</h3>
-                    <p className="text-primary-600 mb-2">Infogen Labs</p>
-                    <p className="text-gray-500 text-sm mb-3">Oct 2021 - Jan 2024</p>
-                    <p className="text-gray-600">
-                      Led business unit operations & GenAI initiatives, driving innovation and growth.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white p-6 rounded-xl shadow-soft-lg hover-lift text-center"
+            >
+              <div className="w-16 h-16 mx-auto bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                <FaLinkedin className="text-primary-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Social Media</h3>
+              <div className="flex justify-center space-x-4 mt-2">
+                {contactInfo.social.map((platform, index) => (
+                  <a
+                    key={index}
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-600 hover:text-primary-800 transition-colors"
+                  >
+                    {platform.icon}
+                  </a>
+                ))}
+              </div>
+            </motion.div>
+          </div>
 
-            <div className="mt-10 text-center">
-              <Link to="/experience" className="btn btn-primary">
-                View Full Experience
-              </Link>
-            </div>
+          <div className="mt-10 text-center">
+            <Link to="/contact" className="btn btn-primary">
+              Contact Me
+            </Link>
           </div>
         </div>
       </section>
