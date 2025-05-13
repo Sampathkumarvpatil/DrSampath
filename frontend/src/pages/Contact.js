@@ -68,7 +68,7 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt className="text-primary-600 text-xl" />,
       title: "Location",
-      value: "Available worldwide for remote collaboration",
+      value: "Karnataka, India",
       link: null
     },
     {
