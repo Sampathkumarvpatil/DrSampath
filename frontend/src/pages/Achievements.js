@@ -452,7 +452,7 @@ const Achievements = () => {
                   <img 
                     src="https://phdcertificates.s3.eu-north-1.amazonaws.com/achievers+award.jpeg" 
                     alt="Indian Achievers Award Certificate" 
-                    className="max-w-full h-auto rounded-lg shadow-md border-2 border-primary-100 hover:scale-105 transition-transform duration-300"
+                    className="max-w-[60%] h-auto rounded-lg shadow-md border-2 border-primary-100 hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <p className="text-gray-600 mb-4">
