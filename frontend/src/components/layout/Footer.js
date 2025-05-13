@@ -95,11 +95,11 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start">
                 <FaEnvelope className="mt-1 mr-3 flex-shrink-0 text-primary-400" />
-                <span>contact@example.com</span>
+                <span>drsampathkumarpatil@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <FaPhone className="mt-1 mr-3 flex-shrink-0 text-primary-400" />
-                <span>+1 (234) 567-890</span>
+                <span>+919353391603</span>
               </li>
             </ul>
           </div>
