@@ -119,25 +119,25 @@ const Achievements = () => {
             description="A summary of key achievements and their impact in the field of AI and technology."
           />
 
-          <div className="mt-12 overflow-x-auto">
-            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden border-collapse">
-              <thead className="bg-gradient-to-r from-primary-600 to-primary-700">
+          <div className="mt-12">
+            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden">
+              <thead>
                 <tr>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-4 bg-primary-100 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Achievement
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-4 bg-primary-200 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Year
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-4 bg-primary-300 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Description
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-4 bg-primary-400 text-left text-sm font-semibold text-white uppercase tracking-wider">
                     Impact
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
+              <tbody>
                 {achievements.map((achievement, index) => (
                   <motion.tr
                     key={index}
@@ -145,21 +145,21 @@ const Achievements = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="hover:bg-primary-50 transition-colors"
+                    className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}
                   >
-                    <td className="px-6 py-5 whitespace-nowrap text-base font-medium text-gray-900 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base font-medium text-gray-900">
                       <div className="flex items-center">
                         <span className="mr-3 p-2 rounded-full bg-primary-100 flex items-center justify-center">{achievement.icon}</span>
                         {achievement.title}
                       </div>
                     </td>
-                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-center text-base text-gray-700">
                       {achievement.year}
                     </td>
-                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base text-gray-700">
                       {achievement.description}
                     </td>
-                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base text-gray-700">
                       {achievement.impact}
                     </td>
                   </motion.tr>
