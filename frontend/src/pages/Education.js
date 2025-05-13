@@ -31,7 +31,7 @@ const Education = () => {
     {
       degree: "M.Tech",
       institution: "JNTUH University",
-      year: "2012-2014",
+      year: "2012-14",
       achievements: "84% aggregate, Topper in 2nd & 3rd semesters",
       icon: <FaGraduationCap className="text-primary-500 text-4xl" />,
     },
