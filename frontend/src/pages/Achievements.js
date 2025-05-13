@@ -505,7 +505,7 @@ const Achievements = () => {
         <div className="container">
           <SectionTitle
             subtitle="TESTIMONIALS"
-            title="Client Feedback"
+            title="Professional Endorsements"
             description="What industry leaders say about my work and achievements."
             light={true}
           />
