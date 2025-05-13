@@ -58,7 +58,7 @@ const ProjectVideos = ({ activeTab }) => {
         </video>
         {playingVideoIndex !== index && (
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-center group-hover:opacity-80">
-            <div className="w-20 h-20 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-primary-600/80 transition-all duration-300">
+            <div className="w-20 h-20 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-primary-600/80 transition-all duration-300 play-button">
               <svg className="w-12 h-12 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z"></path>
               </svg>
