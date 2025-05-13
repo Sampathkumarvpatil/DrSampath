@@ -38,9 +38,9 @@ const Experience = () => {
       company: "Nexamatic Solutions",
       duration: "Nov'18 - Sep'21",
       responsibilities: [
-        "Designed and implemented AI/ML architecture for enterprise clients",
-        "Provided technical leadership and mentoring to development teams",
-        "Created frameworks for rapid AI application development",
+        "Designed & implemented AI/ML architecture",
+        "Provided tech leadership & mentoring",
+        "Created frameworks for rapid AI development",
         "Consulted on complex AI implementation challenges",
         "Developed proof-of-concepts for innovative AI solutions"
       ],
