@@ -460,7 +460,7 @@ const Achievements = () => {
                   solutions in AI/ML technology.
                 </p>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-500">2022</span>
+                  <span className="text-sm text-gray-500">2023</span>
                   <span className="text-primary-600">Award of Excellence</span>
                 </div>
               </div>
