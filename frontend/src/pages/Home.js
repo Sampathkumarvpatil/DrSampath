@@ -406,11 +406,11 @@ const Home = () => {
               viewport={{ once: true }}
               className="bg-white rounded-xl overflow-hidden shadow-soft-lg hover-lift"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden h-64">
                 <img
                   src="https://phdcertificates.s3.eu-north-1.amazonaws.com/phd2.jpeg"
                   alt="Honorary Doctorate in AI & Research"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-contain transition-transform duration-500 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4 w-full">
