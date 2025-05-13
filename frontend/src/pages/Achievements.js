@@ -38,7 +38,7 @@ const Achievements = () => {
     },
     {
       title: "Prolific Developer",
-      year: "2021",
+      year: "2023",
       description: "Created 100+ applications in 3 months",
       impact: "Demonstrated exceptional productivity and technical expertise",
       icon: <FaCode className="text-primary-700 text-3xl" />,
