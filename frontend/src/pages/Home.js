@@ -325,9 +325,9 @@ const Home = () => {
               viewport={{ once: true }}
               className="glass p-8 rounded-xl hover-lift"
             >
-              <h3 className="text-xl font-bold mb-2">Honorary Doctorate in AI-Driven Engineering Leadership</h3>
-              <p className="text-light-dark mb-4">Human Rights Council (Govt. of India Approved), 2024</p>
-              <p className="text-sm">Recognized for outstanding innovation leadership in the field of AI.</p>
+              <h3 className="text-xl font-bold mb-2">Ph.D. in AI and Machine Learning</h3>
+              <p className="text-light-dark mb-4">VTU University, Belgaum, Karnataka, 2015-2019</p>
+              <p className="text-sm">Youngest Ph.D. holder in the field, with groundbreaking research in AI applications.</p>
             </motion.div>
             
             <motion.div
@@ -338,7 +338,7 @@ const Home = () => {
               className="glass p-8 rounded-xl hover-lift"
             >
               <h3 className="text-xl font-bold mb-2">Honorary Doctorate in AI & Research</h3>
-              <p className="text-light-dark mb-4">Iconic Peace Council, 2023</p>
+              <p className="text-light-dark mb-4">Iconic Peace Council (Govt. of India), 2023</p>
               <p className="text-sm">Awarded for distinguished research contributions in artificial intelligence.</p>
             </motion.div>
             
@@ -349,9 +349,9 @@ const Home = () => {
               viewport={{ once: true }}
               className="glass p-8 rounded-xl hover-lift"
             >
-              <h3 className="text-xl font-bold mb-2">Ph.D. in AI and Machine Learning</h3>
-              <p className="text-light-dark mb-4">VTU University, Belgaum, Karnataka, 2015-2019</p>
-              <p className="text-sm">Youngest Ph.D. holder in the field, with groundbreaking research in AI applications.</p>
+              <h3 className="text-xl font-bold mb-2">Honorary Doctorate in AI-Driven Engineering Leadership</h3>
+              <p className="text-light-dark mb-4">Human Rights Council (Govt. of India Approved), 2024</p>
+              <p className="text-sm">Recognized for outstanding innovation leadership in the field of AI.</p>
             </motion.div>
           </div>
 
