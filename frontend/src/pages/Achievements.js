@@ -65,7 +65,7 @@ const Achievements = () => {
 
   // AI Meeting Superagent details
   const superagentDetails = {
-    title: "World's First AI Meeting Superagent",
+    title: "First AI Meeting Superagent",
     description: "I developed a revolutionary AI Meeting Superagent that transforms how professionals participate in and benefit from virtual meetings. This groundbreaking innovation combines natural language processing, context awareness, and autonomous action to create an AI assistant that can actively participate in meetings.",
     features: [
       "Real-time meeting transcription and summarization",
