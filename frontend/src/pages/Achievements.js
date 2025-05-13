@@ -192,6 +192,14 @@ const Achievements = () => {
                 {worldRecordDetails.description}
               </p>
 
+              <div className="mb-6 flex justify-center">
+                <img 
+                  src="https://phdcertificates.s3.eu-north-1.amazonaws.com/world+record.jpeg" 
+                  alt="World Record Certificate" 
+                  className="max-w-full h-auto rounded-lg shadow-md border-2 border-primary-100 hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+
               <div className="grid grid-cols-2 gap-4 mb-6">
                 {worldRecordDetails.metrics.map((metric, index) => (
                   <div key={index} className="bg-white p-4 rounded-lg text-center">
