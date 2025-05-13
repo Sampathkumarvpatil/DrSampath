@@ -165,19 +165,19 @@ const Experience = () => {
           />
 
           <div className="mt-12 overflow-x-auto">
-            <table className="min-w-full bg-white shadow-soft-lg rounded-xl overflow-hidden">
-              <thead className="bg-primary-50">
+            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden border-collapse">
+              <thead className="bg-gradient-to-r from-primary-600 to-primary-700">
                 <tr>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Position
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Company
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Duration
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Key Responsibilities
                   </th>
                 </tr>
@@ -192,25 +192,20 @@ const Experience = () => {
                     viewport={{ once: true }}
                     className="hover:bg-primary-50 transition-colors"
                   >
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    <td className="px-6 py-5 whitespace-nowrap text-base font-medium text-gray-900 border-b border-gray-100">
                       {exp.position}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
                       {exp.company}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
                       {exp.duration}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-700">
-                      <ul className="list-disc list-inside">
+                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
+                      <ul className="list-disc list-inside space-y-1">
                         {exp.responsibilities.slice(0, 2).map((resp, idx) => (
-                          <li key={idx} className="mb-1">{resp}</li>
+                          <li key={idx}>{resp}</li>
                         ))}
-                        {exp.responsibilities.length > 2 && (
-                          <div className="text-primary-600 text-xs mt-1 cursor-pointer">
-                            + {exp.responsibilities.length - 2} more responsibilities
-                          </div>
-                        )}
                       </ul>
                     </td>
                   </motion.tr>
