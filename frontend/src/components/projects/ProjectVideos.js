@@ -218,7 +218,7 @@ const ProjectVideos = ({ activeTab }) => {
                   className="bg-white rounded-xl overflow-hidden shadow-soft-xl hover-lift transform transition-all duration-300"
                 >
                   {resource.imageUrl && (
-                    <div className="relative overflow-hidden h-64">
+                    <div className="relative overflow-hidden h-64 video-container">
                       <img 
                         src={resource.imageUrl} 
                         alt={resource.title}
