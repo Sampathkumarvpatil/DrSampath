@@ -165,7 +165,7 @@ const SuperAgentPortfolio = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-white/20 rounded-full blur-xl"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1693723800576-3daeca96c285?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3"
+                  src="https://images.unsplash.com/photo-1717501218347-64853a917fd8?w=800&auto=format&fit=crop"
                   alt="AI Technology" 
                   className="w-96 h-80 object-cover rounded-2xl shadow-2xl relative z-10 border-2 border-white/30"
                 />
