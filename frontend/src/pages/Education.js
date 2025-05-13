@@ -38,7 +38,7 @@ const Education = () => {
     {
       degree: "B.E. in Electrical and Electronics Engineering",
       institution: "VTU University",
-      year: "2008-2012",
+      year: "2008-12",
       achievements: "80% aggregate, Topper from 2nd-7th semesters",
       icon: <FaGraduationCap className="text-primary-500 text-4xl" />,
     },
