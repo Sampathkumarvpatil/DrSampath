@@ -13,7 +13,6 @@ const Home = lazy(() => import("./pages/Home"));
 const Education = lazy(() => import("./pages/Education"));
 const Achievements = lazy(() => import("./pages/Achievements"));
 const Experience = lazy(() => import("./pages/Experience"));
-const About = lazy(() => import("./pages/About"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Contact = lazy(() => import("./pages/Contact"));
