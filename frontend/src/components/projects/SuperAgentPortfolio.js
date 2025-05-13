@@ -27,7 +27,7 @@ const SuperAgentPortfolio = () => {
          { title: "ITSuperagent BuildPipeline", description: "Manages CI/CD build workflows with intelligent optimization and automatic error detection and resolution.", category: "DevOps" },
          { title: "ITSuperagent DeployManager", description: "Orchestrates application deployments with zero-downtime strategies and automatic rollback capabilities.", category: "Deployment" },
          { title: "ITSuperagent TestOrchestrator", description: "Integrates test suites into pipelines with intelligent test selection and parallel execution optimization.", category: "Testing" },
-         { title: "ITGenius MetricsDashboard", description: "Visualizes development metrics in real time with AI-powered insights and anomaly detection capabilities.", category: "Analytics" }
+         { title: "ITSuperagent MetricsDashboard", description: "Visualizes development metrics in real time with AI-powered insights and anomaly detection capabilities.", category: "Analytics" }
        ]
     },
     software: {
