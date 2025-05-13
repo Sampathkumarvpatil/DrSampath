@@ -18,23 +18,42 @@ const Projects = () => {
           <div className="absolute inset-0 bg-dark-light opacity-70"></div>
         </div>
 
-        <div className="container relative z-10 text-center text-white">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
-          >
-            AI SuperAgent Platform
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-xl max-w-3xl mx-auto"
-          >
-            The world's most comprehensive AI agent system with industry-specific solutions
-          </motion.p>
+        <div className="container relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="text-center md:text-left text-white md:w-3/5">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+              >
+                AI SuperAgent Platform
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="text-xl max-w-3xl mx-auto md:mx-0"
+              >
+                The world's most comprehensive AI agent system with industry-specific solutions
+              </motion.p>
+            </div>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mt-8 md:mt-0 md:w-2/5 flex justify-center md:justify-end"
+            >
+              <div className="w-72 h-72 relative">
+                <div className="absolute inset-0 bg-primary-500 rounded-full opacity-20 blur-lg"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1676493273592-ec1de91908e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8YWkgdGVjaG5vbG9neXx8fHx8fDE2MjE4MjA3NTQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+                  alt="AI Technology" 
+                  className="w-full h-full object-cover rounded-xl z-10 relative"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
