@@ -75,78 +75,92 @@ const ProjectVideos = ({ activeTab }) => {
       {
         title: "ChartSuperagent",
         description: "Creates mindmaps, flowcharts and visual representations of data",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/chartgenius+comp+(2).mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/chartgenius+comp+(2).mp4",
+        thumbnail: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
       },
       {
         title: "ChatSuperagent",
         description: "Open-source chat solution with advanced capabilities",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/Chatgeniusplus+(1).mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/Chatgeniusplus+(1).mp4",
+        thumbnail: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
       },
       {
         title: "DataSuperagent",
         description: "Powerful visualizations from files and data sources",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/DataGenius+comp+(3).mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/DataGenius+comp+(3).mp4",
+        thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
       },
       {
         title: "PM Superagent",
         description: "Project management and workflow optimization",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/PMGenius+Comp.mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/PMGenius+Comp.mp4",
+        thumbnail: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
       }
     ],
     qa: [
       {
         title: "Test Superagent",
         description: "Comprehensive testing solution for QA engineers",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/TestGenius+Comp.mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/TestGenius+Comp.mp4",
+        thumbnail: "https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
       },
       {
         title: "AI Testverse Superagent Terminal",
         description: "Advanced testing automation platform",
-        url: "https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/superagentvideo.mp4"
+        url: "https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/superagentvideo.mp4",
+        thumbnail: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80"
       },
       {
         title: "Web Performance Testing",
         description: "Complete solution for web page testing",
-        url: "https://mcptestversesuperagentvideos.s3.eu-north-1.amazonaws.com/webperformancetestingvideo+(1).mp4"
+        url: "https://mcptestversesuperagentvideos.s3.eu-north-1.amazonaws.com/webperformancetestingvideo+(1).mp4",
+        thumbnail: "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
       },
       {
         title: "ETL Testing",
         description: "Effective data pipeline validation",
-        url: "https://mcptestversesuperagentvideos.s3.eu-north-1.amazonaws.com/etltesting.mp4"
+        url: "https://mcptestversesuperagentvideos.s3.eu-north-1.amazonaws.com/etltesting.mp4",
+        thumbnail: "https://images.unsplash.com/photo-1665686304355-0b09b9e902b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
       },
       {
         title: "API Testing",
         description: "Comprehensive API testing solution",
-        url: "https://mcptestversesuperagentvideos.s3.eu-north-1.amazonaws.com/apitestingvideo+(1).mp4"
+        url: "https://mcptestversesuperagentvideos.s3.eu-north-1.amazonaws.com/apitestingvideo+(1).mp4",
+        thumbnail: "https://images.unsplash.com/photo-1643116774075-acc00caa9a7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
       },
       {
         title: "AI Testverse MCP Podcast",
         description: "Learn about the latest in testing automation",
-        url: "https://mcptestversesuperagentvideos.s3.eu-north-1.amazonaws.com/AI+Testverse+podcast+mcp.mp4"
+        url: "https://mcptestversesuperagentvideos.s3.eu-north-1.amazonaws.com/AI+Testverse+podcast+mcp.mp4",
+        thumbnail: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
       }
     ],
     education: [
       {
         title: "EdTech Superagent",
         description: "Revolutionary solutions for education technology",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/EdTechGenius+comp.mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/EdTechGenius+comp.mp4",
+        thumbnail: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1622&q=80"
       },
       {
         title: "Doc Superagent",
         description: "Document summarization, Q&A, and analysis",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/DocGenius+Comp+(2).mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/DocGenius+Comp+(2).mp4",
+        thumbnail: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
       },
       {
         title: "Video Superagent",
         description: "Video analysis, Q&A, and content understanding",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/Video+Genius+comp.mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/Video+Genius+comp.mp4",
+        thumbnail: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80"
       }
     ],
     marketing: [
       {
         title: "Info-News Superagent",
         description: "Advanced news and information processing",
-        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/Info+News+(2)+(1).mp4"
+        url: "https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/Info+News+(2)+(1).mp4",
+        thumbnail: "https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1747&q=80"
       }
     ]
   };
