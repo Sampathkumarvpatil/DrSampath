@@ -528,16 +528,15 @@ const Achievements = () => {
                 </div>
               </div>
               <p className="italic mb-6">
-                "Dr. Patil's AI Meeting Superagent has transformed how our executive team conducts virtual meetings. 
-                The productivity gains and information retention have been remarkable."
+                "I had the opportunity to explore Dr. Patil's AI Meeting Superagent in action. It's a genuinely useful solution with strong potential for enterprise environments. The app streamlines interactions and boosts efficiency—impressive work!"
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                  <span className="text-lg font-bold">JD</span>
+                  <span className="text-lg font-bold">VB</span>
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-bold">John Doe</h4>
-                  <p className="text-sm text-light-dark">CTO, Technology Innovations Inc.</p>
+                  <h4 className="font-bold">Vinay B. K.</h4>
+                  <p className="text-sm text-light-dark">Sr. Delivery Manager, APAC, Cognizant</p>
                 </div>
               </div>
             </motion.div>
@@ -559,16 +558,15 @@ const Achievements = () => {
                 </div>
               </div>
               <p className="italic mb-6">
-                "The speed at which Dr. Patil delivered our enterprise application was unprecedented. 
-                What would have taken months was completed in days, without compromising quality."
+                "Impressive and useful — this AI solution stands out for its real-world applicability."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                  <span className="text-lg font-bold">JS</span>
+                  <span className="text-lg font-bold">MS</span>
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-bold">Jane Smith</h4>
-                  <p className="text-sm text-light-dark">CEO, Enterprise Solutions Ltd.</p>
+                  <h4 className="font-bold">Meghana</h4>
+                  <p className="text-sm text-light-dark">Sr Developer, Google</p>
                 </div>
               </div>
             </motion.div>
