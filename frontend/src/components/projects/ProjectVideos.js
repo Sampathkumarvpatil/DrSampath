@@ -100,9 +100,24 @@ const ProjectVideos = ({ activeTab }) => {
     ]
   };
 
+  // Map SuperAgentPortfolio tabs to video categories
+  const getVideoCategory = (tab) => {
+    // These are the tabs from SuperAgentPortfolio that we have videos for
+    const videoTabs = ['software', 'qa', 'education', 'marketing'];
+    
+    // If the current tab has videos, return it
+    if (videoTabs.includes(tab)) {
+      return tab;
+    }
+    
+    // Otherwise return null (no videos for this tab)
+    return null;
+  };
+
   // Get videos for current tab
-  const videos = videosByCategory[activeTab] || [];
-  const resources = additionalResources[activeTab] || [];
+  const videoCategory = getVideoCategory(activeTab);
+  const videos = videoCategory ? videosByCategory[videoCategory] || [] : [];
+  const resources = videoCategory ? additionalResources[videoCategory] || [] : [];
 
   if (videos.length === 0) {
     return null;
