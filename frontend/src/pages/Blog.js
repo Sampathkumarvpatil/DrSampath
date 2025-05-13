@@ -94,7 +94,7 @@ const Blog = () => {
       readTime: "11 min read",
       views: 1967,
       image: "https://images.unsplash.com/photo-1557264337-e8a93017fe92",
-      url: "https://ainewsletter.wordpress.in",
+      url: "https://theainewsletterin.wordpress.com",
       featured: false,
     },
     {
