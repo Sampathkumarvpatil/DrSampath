@@ -62,8 +62,8 @@ const Contact = () => {
     {
       icon: <FaPhone className="text-primary-600 text-xl" />,
       title: "Phone",
-      value: "+1 (234) 567-890",
-      link: "tel:+1234567890"
+      value: "+919353391603",
+      link: "tel:+919353391603"
     },
     {
       icon: <FaMapMarkerAlt className="text-primary-600 text-xl" />,
