@@ -178,7 +178,7 @@ const Blog = () => {
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <a
-                      href="https://ainewsletter.wordpress.in"
+                      href="https://theainewsletterin.wordpress.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary"
