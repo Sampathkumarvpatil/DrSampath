@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaGithub, FaTwitter, FaChevronDown, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFacebook, FaChevronDown, FaEnvelope, FaPhone } from "react-icons/fa";
 import SectionTitle from "../components/utils/SectionTitle";
 import AnimatedCounter from "../components/utils/AnimatedCounter";
 
