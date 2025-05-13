@@ -168,6 +168,10 @@ const SuperAgentPortfolio = () => {
                   src="https://images.unsplash.com/photo-1717501218347-64853a917fd8?w=800&auto=format&fit=crop"
                   alt="AI Technology" 
                   className="w-96 h-80 object-cover rounded-2xl shadow-2xl relative z-10 border-2 border-white/30"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "https://images.unsplash.com/photo-1652554074038-c3ec9aeb6c0d?w=800&auto=format&fit=crop";
+                  }}
                 />
                 <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-white/20 rounded-full blur-lg"></div>
               </div>
