@@ -155,21 +155,7 @@ const ProjectVideos = ({ activeTab }) => {
               viewport={{ once: true }}
               className="bg-white rounded-xl overflow-hidden shadow-soft-xl hover-lift transform transition-all duration-300"
             >
-              <div className="aspect-w-16 relative group video-container">
-                <video 
-                  controls
-                  className="w-full h-full object-cover"
-                  preload="metadata"
-                >
-                  <source src={video.url} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <svg className="w-20 h-20 text-white opacity-80" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M8 5v14l11-7z"></path>
-                  </svg>
-                </div>
-              </div>
+              <VideoPlayer video={video} index={index} />
               <div className="p-8">
                 <div className="flex items-center mb-3">
                   <span className="bg-primary-50 text-primary-700 text-xs px-3 py-1 rounded-full font-semibold uppercase tracking-wider">
@@ -178,7 +164,10 @@ const ProjectVideos = ({ activeTab }) => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">{video.title}</h3>
                 <p className="text-gray-600 mb-4 text-lg">{video.description}</p>
-                <button className="text-primary-600 hover:text-primary-800 font-medium flex items-center mt-2 transition-all duration-300 hover:translate-x-1">
+                <button 
+                  onClick={() => handlePlayButtonClick(index)}
+                  className="text-primary-600 hover:text-primary-800 font-medium flex items-center mt-2 transition-all duration-300 hover:translate-x-1"
+                >
                   Watch Video
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
