@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "../components/utils/SectionTitle";
-import { FaEnvelope, FaPhone, FaLinkedin, FaTwitter, FaGithub, FaMapMarkerAlt, FaCalendarAlt, FaPaperPlane, FaCheck, FaExclamationCircle } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaLinkedin, FaFacebook, FaGithub, FaMapMarkerAlt, FaCalendarAlt, FaPaperPlane, FaCheck, FaExclamationCircle } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
