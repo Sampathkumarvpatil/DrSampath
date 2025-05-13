@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import ProjectVideos from './ProjectVideos';
 
 const SuperAgentPortfolio = () => {
-  const [activeTab, setActiveTab] = useState('hr');
+  const [activeTab, setActiveTab] = useState('software');
   
   // Define all our tabs and their content
   const tabs = {
