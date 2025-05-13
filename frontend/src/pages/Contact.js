@@ -80,8 +80,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", icon: <FaLinkedin className="text-2xl" />, href: "#", color: "bg-[#0077B5]" },
-    { name: "Twitter", icon: <FaTwitter className="text-2xl" />, href: "#", color: "bg-[#1DA1F2]" },
+    { name: "LinkedIn", icon: <FaLinkedin className="text-2xl" />, href: "https://www.linkedin.com/in/dr-sampathkumar-v-patil-80a6941b2", color: "bg-[#0077B5]" },
+    { name: "Facebook", icon: <FaTwitter className="text-2xl" />, href: "https://www.facebook.com/share/16bX5FpvGL/?mibextid=wwXIfr", color: "bg-[#1DA1F2]" },
     { name: "GitHub", icon: <FaGithub className="text-2xl" />, href: "#", color: "bg-[#333333]" },
   ];
 
