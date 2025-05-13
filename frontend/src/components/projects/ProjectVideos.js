@@ -50,7 +50,7 @@ const ProjectVideos = ({ activeTab }) => {
           className="w-full h-full object-cover"
           preload="metadata"
           controls={playingVideoIndex === index}
-          poster={playingVideoIndex === index ? "" : "https://images.unsplash.com/photo-1557264337-e8a93017fe92"}
+          poster={video.thumbnail || "https://images.unsplash.com/photo-1557264337-e8a93017fe92"}
           onEnded={() => setPlayingVideoIndex(null)}
         >
           <source src={video.url} type="video/mp4" />
