@@ -129,7 +129,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center"
             >
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[30rem] lg:h-[30rem]">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow"></div>
                 <img
                   src="https://phdcertificates.s3.eu-north-1.amazonaws.com/websiteimage.png"
