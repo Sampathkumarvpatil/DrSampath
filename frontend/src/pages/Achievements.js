@@ -48,7 +48,7 @@ const Achievements = () => {
   // World record details
   const worldRecordDetails = {
     title: "Global Benchmark in AI Agent Development",
-    description: "In a groundbreaking achievement, I successfully created 35 AI-assisted news channels, developed over 100 applications, and published 2,500+ blogs within just 3 months. This record-setting accomplishment demonstrates the transformative potential of AI when combined with strategic leadership and technical expertise.",
+    description: "In a groundbreaking achievement, I successfully created 35 AI-assisted News Broadcasts, developed over 100 AI features, and published 2,500+ blogs within just 3 months. This record-setting accomplishment demonstrates the transformative potential of AI when combined with strategic leadership and technical expertise.",
     metrics: [
       { label: "News Channels", value: 35 },
       { label: "Applications", value: 100 },
