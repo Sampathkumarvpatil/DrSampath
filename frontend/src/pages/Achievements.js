@@ -443,8 +443,8 @@ const Achievements = () => {
               viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift"
             >
-              <div className="h-48 bg-primary-100 flex items-center justify-center">
-                <FaAward className="text-primary-500 text-6xl" />
+              <div className="pt-4 bg-primary-100 flex items-center justify-center">
+                {/* Removed the icon since we have the certificate image */}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Indian Achievers Award</h3>
