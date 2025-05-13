@@ -132,8 +132,8 @@ const Home = () => {
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1610631066894-62452ccb927c"
-                  alt="Dr. Sampath V. Patil"
+                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+                  alt="Dr. Sampath V. Patil - AI Technology"
                   className="relative z-10 rounded-full object-cover w-full h-full border-4 border-primary-400"
                 />
               </div>
