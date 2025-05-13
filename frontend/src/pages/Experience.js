@@ -49,7 +49,7 @@ const Experience = () => {
     {
       position: "Director of Engineering",
       company: "Techvoage LLP",
-      duration: "Jan 2018 - Oct 2018",
+      duration: "Jan'18 - Oct'18",
       responsibilities: [
         "Directed engineering operations & team leadership",
         "Established technical strategies and implementation roadmaps",
