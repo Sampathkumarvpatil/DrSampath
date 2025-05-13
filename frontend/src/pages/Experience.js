@@ -12,9 +12,9 @@ const Experience = () => {
       company: "Ciklum",
       duration: "Feb'24 - Present",
       responsibilities: [
-        "Providing strategic direction for GenAI solutions and implementations",
+        "Providing strategic direction for GenAI solutions",
         "Leading business unit operations and team management",
-        "Overseeing AI architecture design and implementation strategies",
+        "Overseeing AI architecture design and implementation",
         "Driving innovation in GenAI applications and use cases",
         "Establishing partnerships with key technology providers"
       ],
