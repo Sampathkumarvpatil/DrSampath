@@ -164,25 +164,25 @@ const Experience = () => {
             description="A chronological overview of my professional journey and leadership roles."
           />
 
-          <div className="mt-12 overflow-x-auto">
-            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden border-collapse">
-              <thead className="bg-gradient-to-r from-primary-600 to-primary-700">
+          <div className="mt-12">
+            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden">
+              <thead>
                 <tr>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-4 bg-primary-100 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Position
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-4 bg-primary-200 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Company
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-4 bg-primary-300 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
                     Duration
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-4 bg-primary-400 text-left text-sm font-semibold text-white uppercase tracking-wider">
                     Key Responsibilities
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
+              <tbody>
                 {experiences.map((exp, index) => (
                   <motion.tr
                     key={index}
@@ -190,18 +190,18 @@ const Experience = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="hover:bg-primary-50 transition-colors"
+                    className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}
                   >
-                    <td className="px-6 py-5 whitespace-nowrap text-base font-medium text-gray-900 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base font-medium text-gray-900">
                       {exp.position}
                     </td>
-                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base text-gray-700">
                       {exp.company}
                     </td>
-                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base text-gray-700">
                       {exp.duration}
                     </td>
-                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-4 text-base text-gray-700">
                       <ul className="list-disc list-inside space-y-1">
                         {exp.responsibilities.slice(0, 2).map((resp, idx) => (
                           <li key={idx}>{resp}</li>
