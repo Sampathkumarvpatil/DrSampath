@@ -10,7 +10,7 @@ const Experience = () => {
     {
       position: "Business Unit Head & GenAI Principal Lead",
       company: "Ciklum",
-      duration: "Feb 2024 - Present",
+      duration: "Feb'24 - Present",
       responsibilities: [
         "Providing strategic direction for GenAI solutions and implementations",
         "Leading business unit operations and team management",
