@@ -128,10 +128,6 @@ code {
   transition: transform 0.5s ease;
 }
 
-.aspect-w-16:hover video {
-  transform: scale(1.02);
-}
-
 /* Video container styling */
 .video-container {
   border-radius: 0.75rem;
@@ -143,4 +139,29 @@ code {
 .video-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Play button animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.video-container .play-button {
+  animation: pulse 2s infinite;
+}
+
+.video-container:hover .play-button {
+  animation: none;
+  transform: scale(1.1);
 }
