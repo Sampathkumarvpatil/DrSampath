@@ -10,7 +10,6 @@ const Footer = () => {
       { name: "Education", to: "/education" },
       { name: "Achievements", to: "/achievements" },
       { name: "Experience", to: "/experience" },
-      { name: "About", to: "/about" },
       { name: "Projects", to: "/projects" },
       { name: "Blog", to: "/blog" },
       { name: "Contact", to: "/contact" },
