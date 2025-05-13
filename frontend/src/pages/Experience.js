@@ -23,7 +23,7 @@ const Experience = () => {
     {
       position: "Business Unit Head & GenAI Principal Lead",
       company: "Infogen Labs",
-      duration: "Oct 2021 - Jan 2024",
+      duration: "Oct'21 - Jan'24",
       responsibilities: [
         "Led business unit operations & GenAI initiatives",
         "Managed cross-functional teams and project delivery",
