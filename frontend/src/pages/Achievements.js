@@ -371,23 +371,6 @@ const Achievements = () => {
                   <p className="text-gray-600">Meeting Duration Reduction</p>
                 </div>
               </div>
-              
-              <div className="bg-secondary-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-secondary-800 mb-4">Business Implementation</h4>
-                <p className="text-gray-700 mb-4">
-                  The AI Meeting Superagent has been successfully implemented across multiple enterprise 
-                  organizations, delivering measurable productivity improvements and facilitating 
-                  more effective remote collaboration.
-                </p>
-                
-                <div className="flex items-center justify-between bg-white p-3 rounded-lg">
-                  <div>
-                    <h5 className="font-medium">Case Study: Fortune 500 Technology Company</h5>
-                    <p className="text-sm text-gray-600">$1.2M annual productivity savings</p>
-                  </div>
-                  <span className="text-secondary-500">→</span>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
