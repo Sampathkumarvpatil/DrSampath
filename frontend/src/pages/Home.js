@@ -485,7 +485,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Unprecedented AI Features</h3>
                 <p className="text-gray-600 mb-4">
-                  Created 35 AI-assisted news broadcasts, 100+ applications, and 2500+ blogs in just 3 months, 
+                  Created 35 AI-assisted news broadcasts, 100+ AI features, and 2500+ blogs in just 3 months, 
                   setting a new standard for AI-powered productivity.
                 </p>
                 <Link to="/achievements" className="text-primary-600 hover:text-primary-800 font-medium flex items-center">
