@@ -270,7 +270,7 @@ const Achievements = () => {
                       rel="noopener noreferrer"
                       className="inline-block px-6 py-3 bg-white text-primary-700 rounded-full font-medium hover:bg-opacity-90 transition-all"
                     >
-                      View News Channels
+                      View News Broadcasts
                     </a>
                   </div>
                 </div>
