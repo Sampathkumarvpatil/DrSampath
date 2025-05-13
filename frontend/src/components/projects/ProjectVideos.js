@@ -134,10 +134,10 @@ const ProjectVideos = ({ activeTab }) => {
               viewport={{ once: true }}
               className="bg-white rounded-xl overflow-hidden shadow-soft-lg hover-lift"
             >
-              <div className="aspect-w-16 aspect-h-9">
+              <div className="aspect-w-16">
                 <video 
                   controls
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover video-hover"
                   poster="https://images.unsplash.com/photo-1557264337-e8a93017fe92"
                 >
                   <source src={video.url} type="video/mp4" />
