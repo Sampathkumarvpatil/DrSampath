@@ -65,8 +65,8 @@ const Experience = () => {
       duration: "Mar'15 - Dec'17",
       responsibilities: [
         "Led AI/ML solution development & consulting",
-        "Designed scalable architectures for machine learning systems",
-        "Developed algorithms and models for predictive analytics",
+        "Designed scalable ML system architectures",
+        "Developed algorithms for predictive analytics",
         "Implemented data pipelines and processing frameworks",
         "Provided technical guidance on AI/ML best practices"
       ],
