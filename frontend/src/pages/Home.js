@@ -365,7 +365,7 @@ const Home = () => {
       </section>
 
       {/* PhD Certificates Section */}
-      <section className="py-16 bg-light">
+      <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
         <div className="container">
           <SectionTitle
             subtitle="DOCTORAL QUALIFICATIONS"
@@ -379,23 +379,24 @@ const Home = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-soft-lg hover-lift"
+              className="bg-white rounded-xl overflow-hidden shadow-soft-xl hover-lift"
             >
-              <div className="relative overflow-hidden h-64">
+              <div className="relative overflow-hidden h-64 bg-primary-50 p-4 flex items-center justify-center">
                 <img
                   src="https://phdcertificates.s3.eu-north-1.amazonaws.com/vtu+phd-1_page-0001.jpg"
                   alt="Ph.D. in AI and Machine Learning"
                   className="w-full h-full object-contain transition-transform duration-500 hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-4 w-full">
-                    <h4 className="text-white font-bold">VTU University</h4>
-                  </div>
+                <div className="absolute top-0 right-0 bg-primary-600 text-white px-3 py-1 text-xs font-bold rounded-bl-md">
+                  2019
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Ph.D. in AI and Machine Learning</h3>
-                <p className="text-gray-600 text-sm">Official doctoral degree from VTU University, recognizing my research and contributions in the field of Artificial Intelligence and Machine Learning.</p>
+                <h3 className="text-xl font-bold mb-2 text-primary-800">Ph.D. in AI and Machine Learning</h3>
+                <p className="text-gray-600 text-sm mb-3">Official doctoral degree from VTU University, recognizing my research and contributions in the field of Artificial Intelligence and Machine Learning.</p>
+                <div className="flex items-center text-gray-500 text-sm">
+                  <span className="font-medium text-primary-700">VTU University</span>
+                </div>
               </div>
             </motion.div>
 
@@ -404,23 +405,24 @@ const Home = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-soft-lg hover-lift"
+              className="bg-white rounded-xl overflow-hidden shadow-soft-xl hover-lift"
             >
-              <div className="relative overflow-hidden h-64">
+              <div className="relative overflow-hidden h-64 bg-secondary-50 p-4 flex items-center justify-center">
                 <img
                   src="https://phdcertificates.s3.eu-north-1.amazonaws.com/phd2.jpeg"
                   alt="Honorary Doctorate in AI & Research"
                   className="w-full h-full object-contain transition-transform duration-500 hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-4 w-full">
-                    <h4 className="text-white font-bold">Iconic Peace Council</h4>
-                  </div>
+                <div className="absolute top-0 right-0 bg-secondary-600 text-white px-3 py-1 text-xs font-bold rounded-bl-md">
+                  2023
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Honorary Doctorate in AI & Research</h3>
-                <p className="text-gray-600 text-sm">Honorary doctorate awarded by the Iconic Peace Council in 2023, recognizing contributions to AI research and its application for societal improvement.</p>
+                <h3 className="text-xl font-bold mb-2 text-secondary-800">Honorary Doctorate in AI & Research</h3>
+                <p className="text-gray-600 text-sm mb-3">Honorary doctorate awarded by the Iconic Peace Council, recognizing contributions to AI research and its application for societal improvement.</p>
+                <div className="flex items-center text-gray-500 text-sm">
+                  <span className="font-medium text-secondary-700">Iconic Peace Council</span>
+                </div>
               </div>
             </motion.div>
 
@@ -429,23 +431,24 @@ const Home = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-soft-lg hover-lift"
+              className="bg-white rounded-xl overflow-hidden shadow-soft-xl hover-lift"
             >
-              <div className="relative overflow-hidden h-64">
+              <div className="relative overflow-hidden h-64 bg-gray-50 p-4 flex items-center justify-center">
                 <img
                   src="https://phdcertificates.s3.eu-north-1.amazonaws.com/phd3.jpg"
                   alt="Honorary Doctorate in AI-Driven Engineering Leadership"
                   className="w-full h-full object-contain transition-transform duration-500 hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-4 w-full">
-                    <h4 className="text-white font-bold">Human Rights Council</h4>
-                  </div>
+                <div className="absolute top-0 right-0 bg-gray-800 text-white px-3 py-1 text-xs font-bold rounded-bl-md">
+                  2024
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Honorary Doctorate in AI-Driven Engineering Leadership</h3>
-                <p className="text-gray-600 text-sm">Honorary doctorate awarded by the Human Rights Council (Govt. of India Approved) in 2024, acknowledging leadership in engineering with AI-driven solutions.</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-800">Honorary Doctorate in AI-Driven Engineering Leadership</h3>
+                <p className="text-gray-600 text-sm mb-3">Honorary doctorate awarded by the Human Rights Council (Govt. of India Approved), acknowledging leadership in engineering with AI-driven solutions.</p>
+                <div className="flex items-center text-gray-500 text-sm">
+                  <span className="font-medium text-gray-700">Human Rights Council</span>
+                </div>
               </div>
             </motion.div>
           </div>
