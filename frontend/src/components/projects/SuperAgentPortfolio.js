@@ -23,7 +23,7 @@ const SuperAgentPortfolio = () => {
        title: "Information Technology",
        solutions: [
          { title: "ITSuperagent CodeAutomator", description: "Automates code generation and templating for rapid application development with intelligent pattern recognition.", category: "Development" },
-         { title: "ITGenius IssueTracker", description: "Centralizes bug tracking and issue management with AI-powered categorization, prioritization, and resolution suggestions.", category: "Issue Management" },
+         { title: "ITSuperagent IssueTracker", description: "Centralizes bug tracking and issue management with AI-powered categorization, prioritization, and resolution suggestions.", category: "Issue Management" },
          { title: "ITGenius BuildPipeline", description: "Manages CI/CD build workflows with intelligent optimization and automatic error detection and resolution.", category: "DevOps" },
          { title: "ITGenius DeployManager", description: "Orchestrates application deployments with zero-downtime strategies and automatic rollback capabilities.", category: "Deployment" },
          { title: "ITGenius TestOrchestrator", description: "Integrates test suites into pipelines with intelligent test selection and parallel execution optimization.", category: "Testing" },
