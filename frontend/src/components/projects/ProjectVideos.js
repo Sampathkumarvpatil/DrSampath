@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from "framer-motion";
 
 const ProjectVideos = ({ activeTab }) => {
