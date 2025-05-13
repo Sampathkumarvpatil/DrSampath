@@ -36,7 +36,7 @@ const Experience = () => {
     {
       position: "AI/ML Architect Consultant",
       company: "Nexamatic Solutions",
-      duration: "Nov 2018 - Sep 2021",
+      duration: "Nov'18 - Sep'21",
       responsibilities: [
         "Designed and implemented AI/ML architecture for enterprise clients",
         "Provided technical leadership and mentoring to development teams",
