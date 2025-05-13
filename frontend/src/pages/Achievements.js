@@ -428,14 +428,14 @@ const Achievements = () => {
 
       {/* Recognition Gallery */}
       <section className="py-16 bg-white">
-        <div className="container">
+        <div className="container text-center">
           <SectionTitle
             subtitle="RECOGNITION"
             title="Awards & Acknowledgments"
             description="Industry recognition and awards highlighting innovation and excellence."
           />
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-4xl">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
