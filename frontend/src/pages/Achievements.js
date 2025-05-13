@@ -265,7 +265,7 @@ const Achievements = () => {
 
                   <div className="mt-8 text-center">
                     <a 
-                      href="https://ainewsletter.wordpress.in" 
+                      href="https://botgeniussuperagentvideos.s3.eu-north-1.amazonaws.com/Info+News+(2)+(1).mp4" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-block px-6 py-3 bg-white text-primary-700 rounded-full font-medium hover:bg-opacity-90 transition-all"
