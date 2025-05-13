@@ -115,19 +115,19 @@ const Education = () => {
           />
 
           <div className="mt-12">
-            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden">
+            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden border-collapse">
               <thead>
                 <tr>
-                  <th className="px-6 py-4 bg-primary-100 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 bg-primary-600 text-left text-sm font-bold text-white uppercase tracking-wider border border-gray-200">
                     Degree
                   </th>
-                  <th className="px-6 py-4 bg-primary-200 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 bg-primary-600 text-left text-sm font-bold text-white uppercase tracking-wider border border-gray-200">
                     Institution
                   </th>
-                  <th className="px-6 py-4 bg-primary-300 text-left text-sm font-semibold text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 bg-primary-600 text-left text-sm font-bold text-white uppercase tracking-wider border border-gray-200">
                     Year
                   </th>
-                  <th className="px-6 py-4 bg-primary-400 text-left text-sm font-semibold text-white uppercase tracking-wider">
+                  <th className="px-6 py-4 bg-primary-600 text-left text-sm font-bold text-white uppercase tracking-wider border border-gray-200">
                     Achievements
                   </th>
                 </tr>
@@ -142,16 +142,16 @@ const Education = () => {
                     viewport={{ once: true }}
                     className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}
                   >
-                    <td className="px-6 py-4 text-base font-medium text-gray-900">
+                    <td className="px-6 py-4 text-base font-medium text-gray-900 border border-gray-200">
                       {edu.degree}
                     </td>
-                    <td className="px-6 py-4 text-base text-gray-700">
+                    <td className="px-6 py-4 text-base text-gray-700 border border-gray-200">
                       {edu.institution}
                     </td>
-                    <td className="px-6 py-4 text-center text-base text-gray-700">
+                    <td className="px-6 py-4 text-center text-base text-gray-700 border border-gray-200">
                       {edu.year}
                     </td>
-                    <td className="px-6 py-4 text-base text-gray-700">
+                    <td className="px-6 py-4 text-base text-gray-700 border border-gray-200">
                       {edu.achievements}
                     </td>
                   </motion.tr>
