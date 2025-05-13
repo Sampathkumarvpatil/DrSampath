@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   const navigation = {
