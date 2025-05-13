@@ -148,7 +148,7 @@ const Education = () => {
                     <td className="px-6 py-4 text-base text-gray-700 border border-gray-200">
                       {edu.institution}
                     </td>
-                    <td className="px-6 py-4 text-center text-base text-gray-700 border border-gray-200">
+                    <td className="px-6 py-4 text-center text-base text-gray-700 border border-gray-200 whitespace-nowrap">
                       {edu.year}
                     </td>
                     <td className="px-6 py-4 text-base text-gray-700 border border-gray-200">
