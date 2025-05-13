@@ -155,7 +155,7 @@ const ProjectVideos = ({ activeTab }) => {
               viewport={{ once: true }}
               className="bg-white rounded-xl overflow-hidden shadow-soft-xl hover-lift transform transition-all duration-300"
             >
-              <div className="aspect-w-16 relative group">
+              <div className="aspect-w-16 relative group video-container">
                 <video 
                   controls
                   className="w-full h-full object-cover"
