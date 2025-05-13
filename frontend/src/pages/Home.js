@@ -29,8 +29,8 @@ const Home = () => {
     email: "drsampathkumarpatil@gmail.com",
     phone: "+919353391603",
     social: [
-      { name: "LinkedIn", icon: <FaLinkedin className="text-xl" />, href: "#" },
-      { name: "Twitter", icon: <FaTwitter className="text-xl" />, href: "#" },
+      { name: "LinkedIn", icon: <FaLinkedin className="text-xl" />, href: "https://www.linkedin.com/in/dr-sampathkumar-v-patil-80a6941b2" },
+      { name: "Facebook", icon: <FaTwitter className="text-xl" />, href: "https://www.facebook.com/share/16bX5FpvGL/?mibextid=wwXIfr" },
       { name: "GitHub", icon: <FaGithub className="text-xl" />, href: "#" },
     ]
   };
