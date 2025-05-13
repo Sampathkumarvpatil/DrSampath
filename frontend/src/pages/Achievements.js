@@ -558,7 +558,7 @@ const Achievements = () => {
                 </div>
               </div>
               <p className="italic mb-6">
-                "Impressive and useful — this AI solution stands out for its real-world applicability."
+                "Dr. Patil's AI Superagent is a practical and forward-thinking solution. During the demo, I found it highly relevant and beneficial for real-world delivery environments."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
