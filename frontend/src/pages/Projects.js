@@ -47,7 +47,7 @@ const Projects = () => {
               <div className="w-72 h-72 relative">
                 <div className="absolute inset-0 bg-primary-500 rounded-full opacity-20 blur-lg"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1676493273592-ec1de91908e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8YWkgdGVjaG5vbG9neXx8fHx8fDE2MjE4MjA3NTQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+                  src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="AI Technology" 
                   className="w-full h-full object-cover rounded-xl z-10 relative"
                 />
