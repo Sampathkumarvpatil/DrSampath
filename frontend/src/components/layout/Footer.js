@@ -18,8 +18,8 @@ const Footer = () => {
       { name: "LinkedIn", href: "#", icon: <FaLinkedin /> },
       { name: "Twitter", href: "#", icon: <FaTwitter /> },
       { name: "GitHub", href: "#", icon: <FaGithub /> },
-      { name: "Email", href: "mailto:contact@example.com", icon: <FaEnvelope /> },
-      { name: "Phone", href: "tel:+1234567890", icon: <FaPhone /> },
+      { name: "Email", href: "mailto:drsampathkumarpatil@gmail.com", icon: <FaEnvelope /> },
+      { name: "Phone", href: "tel:+919353391603", icon: <FaPhone /> },
     ],
   };
 
