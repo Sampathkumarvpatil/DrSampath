@@ -419,7 +419,7 @@ const Home = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-secondary-800">Honorary Doctorate in AI & Research</h3>
-                <p className="text-gray-600 text-sm mb-3">Honorary doctorate awarded by the Iconic Peace Council, recognizing contributions to AI research and its application for societal improvement.</p>
+                <p className="text-gray-600 text-sm mb-3">Honorary doctorate awarded by the Iconic Peace Council (Govt. of India), recognizing contributions to AI research and its application for societal improvement.</p>
                 <div className="flex items-center text-gray-500 text-sm">
                   <span className="font-medium text-secondary-700">Iconic Peace Council</span>
                 </div>
