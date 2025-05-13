@@ -25,7 +25,7 @@ const Achievements = () => {
     {
       title: "Indian Achievers Award",
       year: "2022",
-      description: "Recognition with Dr. Sanjeev Kuwadekar",
+      description: "Recognition with Dr. Sanjeev Kuwadekar (CEO, Infogen Labs)",
       impact: "Acknowledged for fastest growing solutions in AI/ML",
       icon: <FaAward className="text-accent-500 text-3xl" />,
     },
