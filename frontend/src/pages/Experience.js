@@ -276,62 +276,6 @@ const Experience = () => {
         </div>
       </section>
 
-      {/* Key Projects Section */}
-      <section className="py-16 bg-light-dark">
-        <div className="container">
-          <SectionTitle
-            subtitle="HIGHLIGHTED WORK"
-            title="Key Projects"
-            description="Signature projects that showcase technical expertise and innovation."
-          />
-
-          <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {keyProjects.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-xl overflow-hidden shadow-soft-lg hover-lift"
-              >
-                <div className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4">
-                      {project.icon}
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">{project.title}</h3>
-                      <p className="text-primary-600 text-sm">{project.company}</p>
-                    </div>
-                  </div>
-                  
-                  <p className="text-gray-600 mb-4">
-                    {project.description}
-                  </p>
-                  
-                  <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Technologies Used:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, idx) => (
-                        <span key={idx} className="px-3 py-1 bg-primary-50 text-primary-700 text-xs rounded-full">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="pt-4 border-t border-gray-100">
-                    <h4 className="text-sm font-semibold text-gray-700 mb-1">Impact:</h4>
-                    <p className="text-sm text-gray-600">{project.impact}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Skills Section */}
       <section className="py-16 bg-white">
         <div className="container">
