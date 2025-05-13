@@ -136,23 +136,43 @@ const SuperAgentPortfolio = () => {
       {/* Hero Section */}
       <section className="bg-primary-600 text-white rounded-xl overflow-hidden shadow-soft-xl">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="max-w-3xl"
-          >
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-6">
-              Transform Your Business With AI SuperAgents
-            </h1>
-            <p className="text-xl opacity-90 mb-8">
-              Our cutting-edge AI platform connects hundreds of specialized intelligent agents to automate workflows, enhance productivity, and deliver unparalleled business intelligence across every department.
-            </p>
-            <button className="bg-white text-primary-600 hover:bg-primary-50 font-medium py-3 px-6 rounded-lg transition-all transform hover:scale-105 hover:shadow-soft-lg">
-              Schedule a Demo
-            </button>
-          </motion.div>
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="max-w-2xl"
+            >
+              <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-6">
+                Transform Your Business With AI SuperAgents
+              </h1>
+              <p className="text-xl opacity-90 mb-8">
+                Our cutting-edge AI platform connects hundreds of specialized intelligent agents to automate workflows, enhance productivity, and deliver unparalleled business intelligence across every department.
+              </p>
+              <button className="bg-white text-primary-600 hover:bg-primary-50 font-medium py-3 px-6 rounded-lg transition-all transform hover:scale-105 hover:shadow-soft-lg">
+                Schedule a Demo
+              </button>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="mt-10 md:mt-0 hidden md:block"
+            >
+              <div className="relative">
+                <div className="absolute -inset-1 bg-white/20 rounded-full blur-xl"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1693723800576-3daeca96c285?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3"
+                  alt="AI Technology" 
+                  className="w-96 h-80 object-cover rounded-2xl shadow-2xl relative z-10 border-2 border-white/30"
+                />
+                <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-white/20 rounded-full blur-lg"></div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
