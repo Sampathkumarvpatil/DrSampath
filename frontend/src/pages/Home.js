@@ -266,7 +266,7 @@ const Home = () => {
               <h3 className="text-4xl md:text-5xl font-bold mb-2">
                 <AnimatedCounter end={35} prefix="" suffix="+" />
               </h3>
-              <p className="text-gray-600">News Channels</p>
+              <p className="text-gray-600">AI News Broadcasts</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
