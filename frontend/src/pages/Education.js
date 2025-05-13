@@ -116,23 +116,23 @@ const Education = () => {
 
           <div className="mt-12 overflow-x-auto">
             <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden border-collapse">
-              <thead className="bg-gradient-to-r from-primary-600 to-primary-700">
+              <thead>
                 <tr>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-5 bg-primary-600 text-left text-sm font-semibold text-white uppercase tracking-wider">
                     Degree
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-5 bg-primary-500 text-left text-sm font-semibold text-white uppercase tracking-wider">
                     Institution
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-5 bg-primary-400 text-left text-sm font-semibold text-white uppercase tracking-wider">
                     Year
                   </th>
-                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
+                  <th className="px-6 py-5 bg-primary-300 text-left text-sm font-semibold text-gray-800 uppercase tracking-wider">
                     Achievements
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
+              <tbody>
                 {education.map((edu, index) => (
                   <motion.tr
                     key={index}
@@ -140,18 +140,18 @@ const Education = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="hover:bg-primary-50 transition-colors"
+                    className={index % 2 === 0 ? "bg-light" : "bg-white"}
                   >
-                    <td className="px-6 py-5 whitespace-nowrap text-base font-medium text-gray-900 border-b border-gray-100">
+                    <td className="px-6 py-5 text-base font-medium text-gray-900 border-b border-gray-100">
                       {edu.degree}
                     </td>
-                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
                       {edu.institution}
                     </td>
-                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
                       {edu.year}
                     </td>
-                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
+                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
                       {edu.achievements}
                     </td>
                   </motion.tr>
