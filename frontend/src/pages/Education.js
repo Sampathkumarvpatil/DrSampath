@@ -16,7 +16,7 @@ const Education = () => {
     },
     {
       degree: "Honorary Doctorate in AI & Research",
-      institution: "Iconic Peace Council",
+      institution: "Iconic Peace Council (Govt. of India Approved)",
       year: "2023",
       achievements: "Distinguished research contributions",
       icon: <FaGraduationCap className="text-primary-500 text-4xl" />,
