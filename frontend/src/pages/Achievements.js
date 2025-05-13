@@ -120,19 +120,19 @@ const Achievements = () => {
           />
 
           <div className="mt-12 overflow-x-auto">
-            <table className="min-w-full bg-white shadow-soft-lg rounded-xl overflow-hidden">
-              <thead className="bg-primary-50">
+            <table className="min-w-full bg-white shadow-soft-xl rounded-xl overflow-hidden border-collapse">
+              <thead className="bg-gradient-to-r from-primary-600 to-primary-700">
                 <tr>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Achievement
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Year
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Description
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-medium text-primary-700 uppercase tracking-wider">
+                  <th className="px-6 py-5 text-left text-sm font-semibold text-white uppercase tracking-wider border-b border-primary-500">
                     Impact
                   </th>
                 </tr>
@@ -147,19 +147,19 @@ const Achievements = () => {
                     viewport={{ once: true }}
                     className="hover:bg-primary-50 transition-colors"
                   >
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    <td className="px-6 py-5 whitespace-nowrap text-base font-medium text-gray-900 border-b border-gray-100">
                       <div className="flex items-center">
-                        <span className="mr-2">{achievement.icon}</span>
+                        <span className="mr-3 p-2 rounded-full bg-primary-100 flex items-center justify-center">{achievement.icon}</span>
                         {achievement.title}
                       </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                    <td className="px-6 py-5 whitespace-nowrap text-base text-gray-700 border-b border-gray-100">
                       {achievement.year}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-700">
+                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
                       {achievement.description}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-700">
+                    <td className="px-6 py-5 text-base text-gray-700 border-b border-gray-100">
                       {achievement.impact}
                     </td>
                   </motion.tr>
