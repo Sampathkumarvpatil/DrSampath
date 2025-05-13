@@ -17,7 +17,7 @@ const Achievements = () => {
     },
     {
       title: "AI Meeting Superagent",
-      year: "2023",
+      year: "2025",
       description: "Developed first AI Meeting Superagent",
       impact: "Revolutionized virtual meeting participation and productivity",
       icon: <FaRobot className="text-primary-500 text-3xl" />,
