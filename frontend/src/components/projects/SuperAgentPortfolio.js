@@ -284,6 +284,9 @@ const SuperAgentPortfolio = () => {
             ))}
           </div>
           
+          {/* Project Videos - Only shown for tabs that have videos */}
+          <ProjectVideos activeTab={activeTab} />
+          
           {/* QA-specific "How It Works" section - only shown when QA tab is active */}
           {showQADetails && (
             <motion.div
