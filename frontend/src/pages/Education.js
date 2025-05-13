@@ -24,7 +24,7 @@ const Education = () => {
     {
       degree: "Ph.D. in AI and Machine Learning",
       institution: "VTU University, Belgaum, Karnataka",
-      year: "2015-2019",
+      year: "2015-19",
       achievements: "Youngest Ph.D. holder in the field",
       icon: <FaGraduationCap className="text-primary-500 text-4xl" />,
     },
