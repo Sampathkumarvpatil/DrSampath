@@ -10,8 +10,8 @@ const Home = () => {
   // Personal details
   const personalInfo = {
     name: "Dr. Sampath V. Patil",
-    title: "GenAI Principal Lead & Business Unit Head",
-    bio: "Business Unit Head & GenAI Principal Lead Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions. Specialized in AI Meeting Superagents, GenAI infrastructure, and rapid product development across cross-functional teams.",
+    title: "Business Unit Head & GenAI Principal Lead",
+    bio: "Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions. Specialized in AI Meeting Superagents, GenAI infrastructure, and rapid product development across cross-functional teams.",
     vision: "My vision is to democratize AI technology by making sophisticated artificial intelligence accessible and impactful for organizations of all sizes. I believe in using AI as a force multiplier for human creativity and problem-solving capabilities.",
     philosophy: "I approach technology leadership with a philosophy that balances innovation with practical implementation. My work is guided by a commitment to ethical AI development and a focus on creating solutions that deliver measurable business value while pushing the boundaries of what's possible.",
     expertise: [
