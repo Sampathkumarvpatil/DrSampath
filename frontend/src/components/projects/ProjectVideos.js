@@ -173,7 +173,7 @@ const ProjectVideos = ({ activeTab }) => {
               <div className="p-8">
                 <div className="flex items-center mb-3">
                   <span className="bg-primary-50 text-primary-700 text-xs px-3 py-1 rounded-full font-semibold uppercase tracking-wider">
-                    {activeTab}
+                    {videoCategory}
                   </span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">{video.title}</h3>
