@@ -392,9 +392,14 @@ const SuperAgentPortfolio = () => {
                 </div>
                 
                 <div className="text-center">
-                  <button className="btn btn-primary py-3 px-6 transform hover:scale-105">
-                    Try QA Testing Now
-                  </button>
+                  <a 
+                    href="https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/automationterminal.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-primary py-3 px-6 transform hover:scale-105"
+                  >
+                    Try SuperAgent Automation Terminal
+                  </a>
                 </div>
               </div>
             </motion.div>
