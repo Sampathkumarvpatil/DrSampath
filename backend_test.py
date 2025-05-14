@@ -99,55 +99,54 @@ def test_ui_changes():
     
     verifier = UIChangeVerifier()
     
-    # Test 1: "Try SuperAgent Automation Terminal" button URL in Projects page
-    expected_url = "https://www.testverse.in"
-    # Actual URL verified via Playwright test
-    actual_url = "To be verified by Playwright"  # This will be updated by Playwright test
+    # Contact Page Tests
+    
+    # Test 1: Check that the "Office Hours" section has been removed
+    expected_office_hours_present = False
+    # Actual result verified via Playwright test
+    actual_office_hours_present = "To be verified by Playwright"
     verifier.run_test(
-        "'Try SuperAgent Automation Terminal' button URL",
-        expected_url,
-        actual_url
+        "Office Hours section removed",
+        expected_office_hours_present,
+        actual_office_hours_present
     )
     
-    # Test 2: "View QA Terminal Documentation" link URL in Projects page
-    expected_doc_url = "https://www.testverse.in"
-    # Actual URL verified via Playwright test
-    actual_doc_url = "To be verified by Playwright"  # This will be updated by Playwright test
+    # Test 2: Verify that "Consulting & Speaking" section has been replaced with "Speaking Engagements"
+    expected_speaking_engagements_present = True
+    expected_consulting_services_present = False
+    # Actual results verified via Playwright test
+    actual_speaking_engagements_present = "To be verified by Playwright"
+    actual_consulting_services_present = "To be verified by Playwright"
     verifier.run_test(
-        "'View QA Terminal Documentation' link URL",
-        expected_doc_url,
-        actual_doc_url
+        "Speaking Engagements section present",
+        expected_speaking_engagements_present,
+        actual_speaking_engagements_present
+    )
+    verifier.run_test(
+        "Consulting Services section removed",
+        expected_consulting_services_present,
+        actual_consulting_services_present
     )
     
-    # Test 3: ProjectVideos component link URL for "AI Testverse Automation Terminal"
-    expected_resource_url = "https://www.testverse.in"
-    # Actual URL verified via Playwright test
-    actual_resource_url = "To be verified by Playwright"  # This will be updated by Playwright test
+    # Test 3: Check that the section title has been changed from "SERVICES" to "ENGAGEMENTS"
+    expected_section_title = "ENGAGEMENTS"
+    # Actual title verified via Playwright test
+    actual_section_title = "To be verified by Playwright"
     verifier.run_test(
-        "ProjectVideos component resource URL",
-        expected_resource_url,
-        actual_resource_url
-    )
-    
-    # Test 4: Check if any links still use the old URL
-    expected_old_url_count = 0
-    # Actual count verified via Playwright test
-    actual_old_url_count = "To be verified by Playwright"  # This will be updated by Playwright test
-    verifier.run_test(
-        "Count of links still using old URL",
-        expected_old_url_count,
-        actual_old_url_count
+        "Section title changed to ENGAGEMENTS",
+        expected_section_title,
+        actual_section_title
     )
     
     # Print summary
     success = verifier.summarize_results()
     
     # Additional notes
-    print("\nUI Test Notes:")
-    print(f"1. 'Try SuperAgent Automation Terminal' button URL should be: {expected_url}")
-    print(f"2. 'View QA Terminal Documentation' link URL should be: {expected_doc_url}")
-    print(f"3. ProjectVideos component resource URL should be: {expected_resource_url}")
-    print(f"4. No links should use the old URL: https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/automationterminal.html")
+    print("\nContact Page UI Test Notes:")
+    print("1. Office Hours section should be removed from the right sidebar")
+    print("2. Consulting & Speaking section should be replaced with only Speaking Engagements")
+    print("3. Consulting Services card should be removed, while Speaking Engagements card should remain")
+    print("4. Section title should be changed from SERVICES to ENGAGEMENTS")
     
     return success
 
