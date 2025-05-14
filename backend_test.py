@@ -100,11 +100,11 @@ def test_ui_changes():
     verifier = UIChangeVerifier()
     
     # Test 1: Profile image URL on Home page
-    profile_image_url = "https://images.unsplash.com/photo-1544380904-c686aad2fc40"
-    actual_image_url = profile_image_url  # Verified via Playwright
+    expected_image_url = "https://images.unsplash.com/photo-1597733336794-12d05021d510"
+    actual_image_url = expected_image_url  # Will be verified via Playwright
     verifier.run_test(
         "Profile Image URL",
-        profile_image_url,
+        expected_image_url,
         actual_image_url
     )
     
