@@ -215,60 +215,6 @@ const Achievements = () => {
                   </div>
                 ))}
               </div>
-
-              <div className="bg-primary-50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-3 text-primary-700">Press Release Links</h4>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">➤</span>
-                    <a href="https://aninews.in/news/business/business/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120611/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors">
-                      ANI News
-                    </a>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">➤</span>
-                    <a href="https://www.zee5.com/articles/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-2023" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors">
-                      Zee5
-                    </a>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">➤</span>
-                    <a href="https://www.worldnewsnetwork.net/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors">
-                      World News Network
-                    </a>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">➤</span>
-                    <a href="https://www.losangeleseveningdespatch.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors">
-                      Los Angeles Evening Despatch
-                    </a>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">➤</span>
-                    <a href="https://www.londonchannelnews.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors">
-                      London Channel News
-                    </a>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">➤</span>
-                    <a href="https://www.srilankaislandnews.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors">
-                      Srilanka Island News
-                    </a>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">➤</span>
-                    <a href="https://www.whitehousenewstime.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors">
-                      WhiteHouse News Time
-                    </a>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">➤</span>
-                    <a href="https://www.KarnatakaLive.in/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors">
-                      Karnataka Live
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </motion.div>
 
             <motion.div
