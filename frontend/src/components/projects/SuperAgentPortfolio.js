@@ -693,7 +693,7 @@ const SuperAgentPortfolio = () => {
               </div>
               <div className="mt-6">
                 <a 
-                  href="https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/automationterminal.html" 
+                  href="https://www.testverse.in" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-primary-600 font-medium hover:text-primary-700 flex items-center transition-colors"
