@@ -419,6 +419,33 @@ const SuperAgentPortfolio = () => {
             </p>
           </motion.div>
           
+          {/* Video Section */}
+          <div className="mb-10 bg-white rounded-xl shadow-soft-lg overflow-hidden">
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">See AI MeetSuperAgent in Action</h3>
+              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                <video 
+                  controls 
+                  className="w-full h-full object-cover"
+                  poster="https://images.unsplash.com/photo-1597733336794-12d05021d510"
+                >
+                  <source src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/AI+Superagentdemo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="mt-6 text-center">
+                <a 
+                  href="https://www.meetsuperagent.in/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-primary py-3 px-6 transform hover:scale-105"
+                >
+                  Visit MeetSuperAgent Website
+                </a>
+              </div>
+            </div>
+          </div>
+          
           <div className="bg-white rounded-xl shadow-soft-lg overflow-hidden">
             <div className="p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Key Features</h3>
@@ -542,9 +569,14 @@ const SuperAgentPortfolio = () => {
                 viewport={{ once: true }}
                 className="mt-8 text-center"
               >
-                <button className="btn btn-primary py-3 px-6 transform hover:scale-105">
+                <a 
+                  href="https://www.meetsuperagent.in/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-primary py-3 px-6 transform hover:scale-105"
+                >
                   Try AI MeetSuperAgent Now
-                </button>
+                </a>
               </motion.div>
             </div>
           </div>
