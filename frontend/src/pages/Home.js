@@ -511,7 +511,7 @@ const Home = () => {
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <span className="px-3 py-1 bg-secondary-100 text-secondary-800 text-xs font-semibold rounded-full">Innovation</span>
-                  <span className="ml-2 text-gray-400 text-sm">2023</span>
+                  <span className="ml-2 text-gray-400 text-sm">2025</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">First AI Meeting Superagent</h3>
                 <p className="text-gray-600 mb-4">
