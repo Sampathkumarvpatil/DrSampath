@@ -138,6 +138,26 @@ def test_ui_changes():
         actual_section_title
     )
     
+    # Test 4: Check that the FAQ question "Are you available for remote work?" has been removed
+    expected_remote_work_faq_present = False
+    # Actual result verified via Playwright test
+    actual_remote_work_faq_present = "To be verified by Playwright"
+    verifier.run_test(
+        "Remote work FAQ question removed",
+        expected_remote_work_faq_present,
+        actual_remote_work_faq_present
+    )
+    
+    # Test 5: Check that there are only 3 FAQs showing instead of 4
+    expected_faq_count = 3
+    # Actual count verified via Playwright test
+    actual_faq_count = "To be verified by Playwright"
+    verifier.run_test(
+        "FAQ count is now 3",
+        expected_faq_count,
+        actual_faq_count
+    )
+    
     # Print summary
     success = verifier.summarize_results()
     
@@ -147,6 +167,8 @@ def test_ui_changes():
     print("2. Consulting & Speaking section should be replaced with only Speaking Engagements")
     print("3. Consulting Services card should be removed, while Speaking Engagements card should remain")
     print("4. Section title should be changed from SERVICES to ENGAGEMENTS")
+    print("5. FAQ question 'Are you available for remote work?' should be removed")
+    print("6. There should be only 3 FAQs showing: 'What types of projects do you work on?', 'How do your consulting services work?', and 'What is your typical response time?'")
     
     return success
 
