@@ -469,9 +469,39 @@ const Achievements = () => {
                   Recognized alongside Dr. Sanjeev Kuwadekar for creating the fastest growing 
                   solutions in AI/ML technology.
                 </p>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mb-4">
                   <span className="text-sm text-gray-500">2023</span>
                   <span className="text-primary-600">Award of Excellence</span>
+                </div>
+                
+                <div className="mt-4 bg-primary-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-3 text-primary-700">Press Release Links</h4>
+                  <ul className="space-y-2 text-left">
+                    <li className="flex items-start">
+                      <span className="text-primary-500 mr-2">➤</span>
+                      <a href="https://aninews.in/news/business/business/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120611/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors text-sm">
+                        ANI News
+                      </a>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary-500 mr-2">➤</span>
+                      <a href="https://www.zee5.com/articles/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-2023" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors text-sm">
+                        Zee5
+                      </a>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary-500 mr-2">➤</span>
+                      <a href="https://www.worldnewsnetwork.net/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors text-sm">
+                        World News Network
+                      </a>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary-500 mr-2">➤</span>
+                      <a href="https://www.KarnatakaLive.in/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800 transition-colors text-sm">
+                        Karnataka Live
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </motion.div>
