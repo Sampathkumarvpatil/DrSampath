@@ -612,6 +612,29 @@ const SuperAgentPortfolio = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
+              <div className="bg-white rounded-lg overflow-hidden shadow-soft-lg">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">See SuperAgent Automation Terminal in Action</h3>
+                  <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                    <video 
+                      controls 
+                      className="w-full h-full object-cover"
+                      poster="https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0"
+                    >
+                      <source src="https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/superagentvideo.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
               <div className="bg-black rounded-lg overflow-hidden shadow-soft-lg">
                 <div className="flex items-center bg-gray-800 px-4 py-2">
                   <div className="flex space-x-2 mr-4">
