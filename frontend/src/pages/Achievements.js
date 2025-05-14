@@ -379,7 +379,7 @@ const Achievements = () => {
                 </ul>
                 
                 <div className="mt-8 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                  <h4 className="font-semibold mb-2">Technical Innovation</h4>
+                  <h4 className="font-semibold mb-2">Technical Innovation 2025</h4>
                   <p className="text-sm">
                     Combines advanced NLP, real-time audio processing, semantic understanding, 
                     and autonomous decision-making in a unified AI system.
