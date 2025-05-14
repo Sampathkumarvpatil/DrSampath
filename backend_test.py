@@ -100,9 +100,9 @@ def test_ui_changes():
     verifier = UIChangeVerifier()
     
     # Test 1: Home page profile image URL
-    expected_profile_image = "https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0"
+    expected_profile_image = "https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/1fcf17d6-cbc4-4e1e-aff7-d11f4ed54c8e.png"
     # Actual image URL verified via Playwright test
-    actual_profile_image = "https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0"  # This will be updated by Playwright test
+    actual_profile_image = "https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/1fcf17d6-cbc4-4e1e-aff7-d11f4ed54c8e.png"  # This will be updated by Playwright test
     verifier.run_test(
         "Home Page Profile Image URL",
         expected_profile_image,
