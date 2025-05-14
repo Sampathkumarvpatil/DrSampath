@@ -131,10 +131,8 @@ def test_ui_changes():
     
     # Additional notes
     print("\nUI Test Notes:")
-    print("1. Profile image on Home page has been updated to the 3D AI-related image")
-    print("2. AI MeetSuperAgent description on Projects page has been updated")
-    print("3. The description no longer contains the word 'world's'")
-    print("4. The description now starts with 'The first AI meeting agent that seamlessly joins virtual meetings...'")
+    print("1. Profile image on Home page has been updated to the blue neural network visualization image")
+    print(f"2. Expected image URL: {expected_image_url}")
     
     return success
 
