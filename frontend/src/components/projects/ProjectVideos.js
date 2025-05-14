@@ -170,7 +170,7 @@ const ProjectVideos = ({ activeTab }) => {
     qa: [
       {
         title: "AI Testverse Automation Terminal",
-        url: "https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/automationterminal.html",
+        url: "https://www.testverse.in",
         imageUrl: "https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/superagent1.png"
       },
       {
