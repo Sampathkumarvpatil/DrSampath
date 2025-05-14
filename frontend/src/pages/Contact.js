@@ -390,7 +390,7 @@ const Contact = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-xl shadow-soft-lg"
             >
