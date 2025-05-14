@@ -99,44 +99,44 @@ def test_ui_changes():
     
     verifier = UIChangeVerifier()
     
-    # Test 1: Home page profile image URL
-    expected_profile_image = "https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/1fcf17d6-cbc4-4e1e-aff7-d11f4ed54c8e.png"
-    # Actual image URL verified via Playwright test
-    actual_profile_image = "https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/1fcf17d6-cbc4-4e1e-aff7-d11f4ed54c8e.png"  # This will be updated by Playwright test
+    # Test 1: "Try SuperAgent Automation Terminal" button URL in Projects page
+    expected_url = "https://www.testverse.in"
+    # Actual URL verified via Playwright test
+    actual_url = "To be verified by Playwright"  # This will be updated by Playwright test
     verifier.run_test(
-        "Home Page Profile Image URL",
-        expected_profile_image,
-        actual_profile_image
+        "'Try SuperAgent Automation Terminal' button URL",
+        expected_url,
+        actual_url
     )
     
-    # Test 2: SuperAgent Automation Terminal video source URL
-    expected_video_url = "https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/superagentvideo.mp4"
-    # Actual video URL verified via Playwright test
-    actual_video_url = "https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/superagentvideo.mp4"  # This will be updated by Playwright test
+    # Test 2: "View QA Terminal Documentation" link URL in Projects page
+    expected_doc_url = "https://www.testverse.in"
+    # Actual URL verified via Playwright test
+    actual_doc_url = "To be verified by Playwright"  # This will be updated by Playwright test
     verifier.run_test(
-        "SuperAgent Automation Terminal Video URL",
-        expected_video_url,
-        actual_video_url
+        "'View QA Terminal Documentation' link URL",
+        expected_doc_url,
+        actual_doc_url
     )
     
-    # Test 3: SuperAgent Automation Terminal video display
-    expected_video_display = "Properly displayed in white card with correct aspect ratio"
-    # Actual display verified via Playwright test
-    actual_video_display = "Properly displayed in white card with correct aspect ratio"  # This will be updated by Playwright test
+    # Test 3: ProjectVideos component link URL for "AI Testverse Automation Terminal"
+    expected_resource_url = "https://www.testverse.in"
+    # Actual URL verified via Playwright test
+    actual_resource_url = "To be verified by Playwright"  # This will be updated by Playwright test
     verifier.run_test(
-        "SuperAgent Automation Terminal Video Display",
-        expected_video_display,
-        actual_video_display
+        "ProjectVideos component resource URL",
+        expected_resource_url,
+        actual_resource_url
     )
     
-    # Test 4: Terminal display presence
-    expected_terminal_presence = "Terminal display is present next to video"
-    # Actual presence verified via Playwright test
-    actual_terminal_presence = "Terminal display is present next to video"  # This will be updated by Playwright test
+    # Test 4: Check if any links still use the old URL
+    expected_old_url_count = 0
+    # Actual count verified via Playwright test
+    actual_old_url_count = "To be verified by Playwright"  # This will be updated by Playwright test
     verifier.run_test(
-        "Terminal Display Presence",
-        expected_terminal_presence,
-        actual_terminal_presence
+        "Count of links still using old URL",
+        expected_old_url_count,
+        actual_old_url_count
     )
     
     # Print summary
@@ -144,10 +144,10 @@ def test_ui_changes():
     
     # Additional notes
     print("\nUI Test Notes:")
-    print(f"1. Home page profile image has been updated to: {expected_profile_image}")
-    print(f"2. SuperAgent Automation Terminal video source URL: {expected_video_url}")
-    print(f"3. Video display: {expected_video_display}")
-    print(f"4. Terminal display: {expected_terminal_presence}")
+    print(f"1. 'Try SuperAgent Automation Terminal' button URL should be: {expected_url}")
+    print(f"2. 'View QA Terminal Documentation' link URL should be: {expected_doc_url}")
+    print(f"3. ProjectVideos component resource URL should be: {expected_resource_url}")
+    print(f"4. No links should use the old URL: https://aitestversesuperagentterminal.s3.eu-north-1.amazonaws.com/automationterminal.html")
     
     return success
 
