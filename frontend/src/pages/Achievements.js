@@ -448,6 +448,357 @@ const Achievements = () => {
         </div>
       </section>
 
+      {/* Media Coverage Section */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <SectionTitle
+            subtitle="MEDIA COVERAGE"
+            title="In The News"
+            description="Featured coverage of the 7th Edition of India Achievers Awards 2023"
+          />
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <motion.a
+              href="https://www.worldnewsnetwork.net/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <span className="text-primary-600 font-bold">WNN</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">World News Network</h3>
+                  <p className="text-sm text-gray-500">Global Coverage</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-primary-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://aninews.in/news/business/business/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120611/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center">
+                  <span className="text-secondary-600 font-bold">ANI</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">ANI News</h3>
+                  <p className="text-sm text-gray-500">Leading News Agency</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-secondary-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.zee5.com/articles/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-2023"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
+                  <span className="text-accent-600 font-bold">Z5</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">Zee5</h3>
+                  <p className="text-sm text-gray-500">Entertainment Platform</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-accent-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.englandnewsportal.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <span className="text-primary-600 font-bold">ENP</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">England News Portal</h3>
+                  <p className="text-sm text-gray-500">UK News Coverage</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-primary-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.europeansuntimes.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center">
+                  <span className="text-secondary-600 font-bold">EST</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">European Sun Times</h3>
+                  <p className="text-sm text-gray-500">European News</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-secondary-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.federaldespatch.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
+                  <span className="text-accent-600 font-bold">FD</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">Federal Despatch</h3>
+                  <p className="text-sm text-gray-500">National Coverage</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-accent-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <motion.a
+              href="https://www.francenetworktimes.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <span className="text-primary-600 font-bold">FNT</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">France Network Times</h3>
+                  <p className="text-sm text-gray-500">French Media</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-primary-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.londonchannelnews.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center">
+                  <span className="text-secondary-600 font-bold">LCN</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">London Channel News</h3>
+                  <p className="text-sm text-gray-500">UK Media Network</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-secondary-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.losangeleseveningdespatch.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
+                  <span className="text-accent-600 font-bold">LAED</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">Los Angeles Evening Despatch</h3>
+                  <p className="text-sm text-gray-500">US West Coast</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-accent-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.newyorkdespatch.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <span className="text-primary-600 font-bold">NYD</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">NewYork Despatch</h3>
+                  <p className="text-sm text-gray-500">US East Coast</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-primary-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.srilankaislandnews.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center">
+                  <span className="text-secondary-600 font-bold">SIN</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">Srilanka Island News</h3>
+                  <p className="text-sm text-gray-500">South Asian Coverage</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-secondary-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.usworldtoday.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
+                  <span className="text-accent-600 font-bold">UWT</span>
+                </div>
+                <div className="ml-4 flex-1">
+                  <h3 className="text-lg font-bold text-gray-800">US World Today</h3>
+                  <p className="text-sm text-gray-500">Global US Perspective</p>
+                </div>
+              </div>
+              <p className="text-gray-700 flex-grow">Blindwink announces the winners of 7th Edition of India Achievers Awards 2023</p>
+              <div className="mt-4 text-accent-600 text-sm font-medium flex items-center">
+                Read Article
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </motion.a>
+          </div>
+        </div>
+      </section>
+
       {/* Client Testimonials */}
       <section className="py-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
         <div className="container">
