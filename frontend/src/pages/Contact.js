@@ -390,21 +390,6 @@ const Contact = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white p-6 rounded-xl shadow-soft-lg"
-            >
-              <h3 className="text-xl font-bold mb-3">Are you available for remote work?</h3>
-              <p className="text-gray-600">
-                Yes, I work with clients globally through remote collaboration. Using modern communication 
-                and project management tools, I can provide the same level of expertise and service 
-                regardless of location.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-xl shadow-soft-lg"
