@@ -449,7 +449,7 @@ const Achievements = () => {
       </section>
 
       {/* Media Coverage Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-light">
         <div className="container">
           <SectionTitle
             subtitle="MEDIA COVERAGE"
@@ -462,10 +462,9 @@ const Achievements = () => {
               href="https://www.worldnewsnetwork.net/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -490,10 +489,9 @@ const Achievements = () => {
               href="https://aninews.in/news/business/business/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120611/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -518,10 +516,9 @@ const Achievements = () => {
               href="https://www.zee5.com/articles/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-2023"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -546,10 +543,9 @@ const Achievements = () => {
               href="https://www.englandnewsportal.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -574,10 +570,9 @@ const Achievements = () => {
               href="https://www.europeansuntimes.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -602,10 +597,9 @@ const Achievements = () => {
               href="https://www.federaldespatch.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -632,10 +626,9 @@ const Achievements = () => {
               href="https://www.francenetworktimes.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -660,10 +653,9 @@ const Achievements = () => {
               href="https://www.londonchannelnews.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -688,10 +680,9 @@ const Achievements = () => {
               href="https://www.losangeleseveningdespatch.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -716,10 +707,9 @@ const Achievements = () => {
               href="https://www.newyorkdespatch.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -744,10 +734,9 @@ const Achievements = () => {
               href="https://www.srilankaislandnews.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
@@ -772,10 +761,9 @@ const Achievements = () => {
               href="https://www.usworldtoday.com/news/blindwink-announces-the-winners-of-7th-edition-of-india-achievers-awards-202320231120120557/"
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              viewport={{ once: true }}
               className="bg-light rounded-xl overflow-hidden shadow-soft-lg hover-lift p-6 flex flex-col"
             >
               <div className="flex items-center mb-4">
