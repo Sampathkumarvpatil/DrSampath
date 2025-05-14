@@ -43,6 +43,25 @@ class APITester:
             "api",
             200
         )
+    
+    def test_create_status_check(self, client_name):
+        """Test creating a status check"""
+        return self.run_test(
+            "Create Status Check",
+            "POST",
+            "api/status",
+            200,
+            data={"client_name": client_name}
+        )
+    
+    def test_get_status_checks(self):
+        """Test getting all status checks"""
+        return self.run_test(
+            "Get Status Checks",
+            "GET",
+            "api/status",
+            200
+        )
 
 def main():
     # Setup
@@ -50,6 +69,15 @@ def main():
     
     # Run tests
     tester.test_root_endpoint()
+    
+    # Test status endpoints
+    client_name = f"test_client_{datetime.now().strftime('%Y%m%d%H%M%S')}"
+    success, response = tester.test_create_status_check(client_name)
+    
+    if success:
+        print(f"Created status check with ID: {response.get('id', 'unknown')}")
+        
+    tester.test_get_status_checks()
     
     # Print results
     print(f"\n📊 Tests passed: {tester.tests_passed}/{tester.tests_run}")
