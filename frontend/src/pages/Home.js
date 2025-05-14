@@ -367,8 +367,8 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
         <div className="container">
           <SectionTitle
-            subtitle="DOCTORAL QUALIFICATIONS"
-            title="PhD Certificates"
+            subtitle=""
+            title="DOCTORAL QUALIFICATIONS"
             description="My academic journey and achievements in Artificial Intelligence research and education."
           />
 
