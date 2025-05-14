@@ -296,59 +296,22 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Consulting & Speaking Section */}
+      {/* Speaking Engagements Section */}
       <section className="py-16 bg-white">
         <div className="container">
           <SectionTitle
-            subtitle="SERVICES"
-            title="Consulting & Speaking"
-            description="Available for specialized consulting services and speaking engagements worldwide."
+            subtitle="ENGAGEMENTS"
+            title="Speaking Engagements"
+            description="Available for speaking engagements worldwide."
           />
 
-          <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="bg-light rounded-xl overflow-hidden shadow-soft-lg"
-            >
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Consulting Services</h3>
-                <p className="text-gray-600 mb-6">
-                  Specialized consulting in AI/ML architecture, rapid application development, and 
-                  AI-driven business transformation. Tailored solutions to meet your specific needs.
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">✓</span>
-                    <span className="text-gray-700">AI Strategy Development</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">✓</span>
-                    <span className="text-gray-700">Technology Architecture Review</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">✓</span>
-                    <span className="text-gray-700">Implementation Oversight</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">✓</span>
-                    <span className="text-gray-700">Team Training & Development</span>
-                  </li>
-                </ul>
-                <button className="btn btn-primary">
-                  Inquire About Consulting
-                </button>
-              </div>
-            </motion.div>
-
+          <div className="mt-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-light rounded-xl overflow-hidden shadow-soft-lg"
+              className="bg-light rounded-xl overflow-hidden shadow-soft-lg max-w-3xl mx-auto"
             >
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Speaking Engagements</h3>
