@@ -452,7 +452,7 @@ const Achievements = () => {
                 {/* Removed the icon since we have the certificate image */}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Indian Achievers Award</h3>
+                <h3 className="text-xl font-bold mb-2 whitespace-nowrap">Indian Achievers Award</h3>
                 <div className="mb-4 flex justify-center">
                   <div className="relative w-4/5 shadow-lg border-2 border-primary-200 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
                     <img 
