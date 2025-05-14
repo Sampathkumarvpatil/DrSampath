@@ -415,7 +415,7 @@ const SuperAgentPortfolio = () => {
             <span className="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Featured Product</span>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">AI MeetSuperAgent</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              The world's first AI meeting agent that seamlessly joins virtual meetings, responds in real-time using your voice profile, adapts intelligently to conversational context, and connects to hundreds of SuperAgents simultaneously.
+              The first AI meeting agent that seamlessly joins virtual meetings, responds in real-time using your voice profile, adapts intelligently to conversational context, and connects to hundreds of SuperAgents simultaneously.
             </p>
           </motion.div>
           
