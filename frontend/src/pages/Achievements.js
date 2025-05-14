@@ -150,7 +150,7 @@ const Achievements = () => {
                     <td className="px-6 py-4 text-base font-medium text-gray-900 border border-gray-200">
                       <div className="flex items-center">
                         <span className="mr-3 p-2 rounded-full bg-primary-100 flex items-center justify-center">{achievement.icon}</span>
-                        {achievement.title}
+                        <span className="whitespace-nowrap">{achievement.title}</span>
                       </div>
                     </td>
                     <td className="px-6 py-4 text-center text-base text-gray-700 border border-gray-200">
