@@ -290,13 +290,6 @@ const Contact = () => {
                     </a>
                   ))}
                 </div>
-                <div className="mt-8 p-4 bg-primary-50 rounded-lg">
-                  <h3 className="font-semibold text-primary-800 mb-2">Office Hours</h3>
-                  <p className="text-gray-700">
-                    Monday - Friday: 9:00 AM - 5:00 PM (EST)<br />
-                    Response time: Within 24-48 hours
-                  </p>
-                </div>
               </div>
             </motion.div>
           </div>
