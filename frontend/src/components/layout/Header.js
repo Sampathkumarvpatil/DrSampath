@@ -76,12 +76,6 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="#"
-              className="ml-3 px-4 py-2 rounded-md text-sm font-medium bg-primary-600 text-white hover:bg-primary-700 transition-colors"
-            >
-              Download CV
-            </a>
           </nav>
 
           {/* Mobile menu button */}
