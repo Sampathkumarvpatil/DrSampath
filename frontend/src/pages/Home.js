@@ -31,7 +31,6 @@ const Home = () => {
     social: [
       { name: "LinkedIn", icon: <FaLinkedin className="text-xl" />, href: "https://www.linkedin.com/in/dr-sampathkumar-v-patil-80a6941b2" },
       { name: "Facebook", icon: <FaFacebook className="text-xl" />, href: "https://www.facebook.com/share/16bX5FpvGL/?mibextid=wwXIfr" },
-      { name: "GitHub", icon: <FaGithub className="text-xl" />, href: "#" },
     ]
   };
 
@@ -123,6 +122,144 @@ const Home = () => {
               </motion.div>
             </motion.div>
 
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaFacebook,
+  FaChevronDown,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa";
+import SectionTitle from "../components/utils/SectionTitle";
+import AnimatedCounter from "../components/utils/AnimatedCounter";
+
+const Home = () => {
+  // Personal details
+  const personalInfo = {
+    name: "Dr.Sampath.V.Patil",
+    title: "Business Unit Head & GenAI Principal Lead",
+    bio: "Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions. Specialized in AI Meeting Superagents, GenAI infrastructure, and rapid product development across cross-functional teams.",
+    vision: "My vision is to democratize AI technology by making sophisticated artificial intelligence accessible and impactful for organizations of all sizes. I believe in using AI as a force multiplier for human creativity and problem-solving capabilities.",
+    philosophy: "I approach technology leadership with a philosophy that balances innovation with practical implementation. My work is guided by a commitment to ethical AI development and a focus on creating solutions that deliver measurable business value while pushing the boundaries of what's possible.",
+    expertise: [
+      "GenAI Implementation",
+      "AI/ML Architecture", 
+      "Rapid Application Development", 
+      "Business Unit Management", 
+      "Innovation Leadership",
+      "AI Meeting Superagent Development"
+    ],
+  };
+
+  // Contact information
+  const contactInfo = {
+    email: "drsampathkumarpatil@gmail.com",
+    phone: "+919353391603",
+    social: [
+      {
+        name: "LinkedIn",
+        icon: <FaLinkedin className="text-xl" />,
+        href: "https://www.linkedin.com/in/dr-sampathkumar-v-patil-80a6941b2",
+      },
+      {
+        name: "Facebook",
+        icon: <FaFacebook className="text-xl" />,
+        href: "https://www.facebook.com/share/16bX5FpvGL/?mibextid=wwXIfr",
+      },
+    ],
+  };
+
+  return (
+    <div className="pt-16">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-dark to-dark-light overflow-hidden">
+        {/* Background overlays */}
+        <div className="absolute inset-0 z-0 opacity-20">
+          <div className="absolute inset-0 bg-gradient-radial from-blue-500/20 to-transparent"></div>
+          <div className="grid-bg absolute inset-0"></div>
+        </div>
+
+        <div className="container relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="w-full md:w-1/2 text-center md:text-left text-white"
+            >
+              <motion.h4
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="text-primary-400 text-lg md:text-xl mb-2"
+              >
+                Welcome to my portfolio
+              </motion.h4>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 whitespace-nowrap"
+              >
+                {personalInfo.name}
+              </motion.h1>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="text-2xl md:text-3xl font-medium mb-6 text-gradient"
+              >
+                {personalInfo.title}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="text-gray-300 text-lg max-w-lg mb-8"
+              >
+                {personalInfo.bio}
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="flex flex-wrap justify-center md:justify-start gap-4"
+              >
+                <Link to="/contact" className="btn btn-primary">
+                  Contact Me
+                </Link>
+                <Link
+                  to="/projects"
+                  className="btn btn-outline text-white border-white hover:bg-white hover:text-dark"
+                >
+                  View Portfolio
+                </Link>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+                className="flex mt-8 justify-center md:justify-start space-x-4"
+              >
+                {contactInfo.social.map((platform, idx) => (
+                  <a
+                    key={idx}
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {platform.icon}
+                  </a>
+                ))}
+              </motion.div>
+            </motion.div>
+
+            {/* Video Avatar */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -131,23 +268,28 @@ const Home = () => {
             >
               <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[30rem] lg:h-[30rem]">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow"></div>
-                <img
-                  src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/1fcf17d6-cbc4-4e1e-aff7-d11f4ed54c8e.png"
-                  alt="Dr.Sampath.V.Patil - AI Technology"
+                <video
+                  src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
+                  alt="Dr. Sampath V. Patil - AI Technology"
                   className="relative z-10 rounded-full object-cover w-full h-full border-4 border-primary-400"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
               </div>
             </motion.div>
-          </div>
 
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 1.5 }}
-              className="text-white cursor-pointer hover:text-primary-400 transition-colors"
-            >
-              <FaChevronDown size={24} />
-            </motion.div>
+            {/* Scroll Indicator */}
+            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 1.5 }}
+                className="text-white cursor-pointer hover:text-primary-400 transition-colors"
+              >
+                <FaChevronDown size={24} />
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
