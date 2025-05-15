@@ -5,6 +5,8 @@ import {
   FaLinkedin,
   FaFacebook,
   FaChevronDown,
+  FaEnvelope,
+  FaPhone,
 } from "react-icons/fa";
 import SectionTitle from "../components/utils/SectionTitle";
 import AnimatedCounter from "../components/utils/AnimatedCounter";
@@ -148,7 +150,10 @@ const Home = () => {
                   src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
                   alt="Dr. Sampath V. Patil - AI Technology"
                   className="relative z-10 rounded-full object-cover w-full h-full border-4 border-primary-400"
-                  controls
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
               </div>
             </motion.div>
@@ -166,6 +171,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       {/* About Section */}
       <section className="py-16 bg-light">
         <div className="container">
