@@ -146,13 +146,20 @@ const Home = () => {
             >
               <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[30rem] lg:h-[30rem]">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow" />
-                <video
-                  src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
-                  alt="Dr. Sampath V. Patil - AI Technology"
-                  className="relative z-10 rounded-full object-cover w-full h-full border-4 border-primary-400"
-                  controls
-                  playsInline
-                />
+                <div className="relative video-container rounded-full">
+                  <video
+                    src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
+                    alt="Dr. Sampath V. Patil - AI Technology"
+                    className="relative z-10 rounded-full object-cover w-full h-full border-4 border-primary-400"
+                    controls
+                    playsInline
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                    <div className="video-label bg-primary-600 text-white px-4 py-2 rounded-full font-bold shadow-lg">
+                      Click to Play Video
+                    </div>
+                  </div>
+                </div>
               </div>
             </motion.div>
 
