@@ -2,22 +2,31 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaFacebook, FaChevronDown } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaFacebook,
+  FaChevronDown,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa";
+import SectionTitle from "../components/utils/SectionTitle";
+import AnimatedCounter from "../components/utils/AnimatedCounter";
 
 const Home = () => {
+  // Personal details
   const personalInfo = {
     name: "Dr.Sampath.V.Patil",
     title: "Business Unit Head & GenAI Principal Lead",
     bio:
-      "Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions.",
+      "Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions. Specialized in AI Meeting Superagents, GenAI infrastructure, and rapid product development across cross-functional teams.",
   };
 
+  // Contact information
   const contactInfo = {
     social: [
       {
         icon: <FaLinkedin className="text-xl" />,
-        href:
-          "https://www.linkedin.com/in/dr-sampathkumar-v-patil-80a6941b2",
+        href: "https://www.linkedin.com/in/dr-sampathkumar-v-patil-80a6941b2",
       },
       {
         icon: <FaFacebook className="text-xl" />,
@@ -124,7 +133,7 @@ const Home = () => {
               <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[30rem] lg:h-[30rem]">
                 {/* glowing background */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow" />
-
+                
                 {/* video with poster & controls */}
                 <video
                   src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
