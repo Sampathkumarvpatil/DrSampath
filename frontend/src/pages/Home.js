@@ -185,23 +185,25 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center"
             >
-              <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[30rem] lg:h-[30rem]">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow" />
-                <div className="relative video-container rounded-full" ref={videoContainerRef}>
-                  <video
-                    ref={videoRef}
-                    src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
-                    alt="Dr. Sampath V. Patil - AI Technology"
-                    className="relative z-10 rounded-full object-cover w-full h-full border-4 border-primary-400"
-                    playsInline
-                    onClick={(e) => {
-                      if (videoRef.current.paused) {
-                        videoRef.current.play();
-                      } else {
-                        videoRef.current.pause();
-                      }
-                    }}
-                  />
+              <div className="relative w-full max-w-xl mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow rounded-xl" />
+                <div className="relative video-container rounded-xl overflow-hidden shadow-2xl" ref={videoContainerRef}>
+                  <div className="aspect-w-16">
+                    <video
+                      ref={videoRef}
+                      src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
+                      alt="Dr. Sampath V. Patil - AI Technology"
+                      className="relative z-10 w-full h-full object-cover border-2 border-primary-400"
+                      playsInline
+                      onClick={(e) => {
+                        if (videoRef.current.paused) {
+                          videoRef.current.play();
+                        } else {
+                          videoRef.current.pause();
+                        }
+                      }}
+                    />
+                  </div>
                   <div className="play-button-overlay" onClick={() => videoRef.current.play()}>
                     <div className="play-button">
                       <div className="play-icon"></div>
