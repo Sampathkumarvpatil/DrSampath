@@ -185,10 +185,10 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center"
             >
-              <div className="relative w-full max-w-md mx-auto">
+              <div className="relative w-full max-w-xl mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow rounded-xl" />
-                <div className="relative video-container rounded-xl overflow-hidden shadow-2xl" style={{ maxWidth: '350px' }} ref={videoContainerRef}>
-                  <div className="aspect-vertical">
+                <div className="relative video-container rounded-xl overflow-hidden shadow-2xl" style={{ maxWidth: '550px', maxHeight: '310px' }} ref={videoContainerRef}>
+                  <div className="aspect-w-16">
                     <video
                       ref={videoRef}
                       src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
