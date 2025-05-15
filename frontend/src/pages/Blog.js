@@ -317,61 +317,61 @@ const Blog = () => {
               <div className="space-y-6">
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Dr.Sampahkumar.v.Patil, <span className="italic">"Security Enhancement of QR Code with Encryption and Decryption Method"</span>, Mage.ai/blog
+                    <span className="font-bold">•</span> <span className="italic">"Security Enhancement of QR Code with Encryption and Decryption Method"</span>, Mage.ai/blog
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar.V.Patil and Dr.S B Shiva Kumar, <span className="italic">"Evolutionary Algorithms based AGA and BPSO Computing for Hybrid Renewable Energy System"</span>, International Journal of Recent Technology and Engineering, vol 8, pp. 3348-3352, 2020. (Scopus Indexed)
+                    <span className="font-bold">•</span> <span className="italic">"Evolutionary Algorithms based AGA and BPSO Computing for Hybrid Renewable Energy System"</span>, International Journal of Recent Technology and Engineering, vol 8, pp. 3348-3352, 2020. (Scopus Indexed)
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar.V.Patil and Dr.S B Shivakumar, <span className="italic">"Optimization of Hybrid Renewable system using Evolutionary Algorithm PID Controllers"</span>, International Journal of Innovative Technology and Exploring Engineering, vol 9, pp. 682-686, 2020. (Scopus Indexed)
+                    <span className="font-bold">•</span> <span className="italic">"Optimization of Hybrid Renewable system using Evolutionary Algorithm PID Controllers"</span>, International Journal of Innovative Technology and Exploring Engineering, vol 9, pp. 682-686, 2020. (Scopus Indexed)
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar and Dr.S.B.Shivakumar, <span className="italic">"Evolutionary algorithms based optimization of PID Controller for Hybrid Renewable Energy system"</span>, International Journal of Advance Research, Ideas and Innovations in Technology, vol 3, pp. 1476-1489, 2017. (UGC Recognized)
+                    <span className="font-bold">•</span> <span className="italic">"Evolutionary algorithms based optimization of PID Controller for Hybrid Renewable Energy system"</span>, International Journal of Advance Research, Ideas and Innovations in Technology, vol 3, pp. 1476-1489, 2017. (UGC Recognized)
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar and Dr.S.B.Shivakumar, <span className="italic">"Evolutionary Algorithm Based Optimization of Hybrid Renewable Energy system in Hosapete, India"</span>, IPASJ International Journal of Electrical Engineering, vol 5, pp. 1-17, 2017. (IIJEE-Elsevier Indexed, UGC Approved)
+                    <span className="font-bold">•</span> <span className="italic">"Evolutionary Algorithm Based Optimization of Hybrid Renewable Energy system in Hosapete, India"</span>, IPASJ International Journal of Electrical Engineering, vol 5, pp. 1-17, 2017. (IIJEE-Elsevier Indexed, UGC Approved)
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar and Dr.S.B.Shivakumar, <span className="italic">"Optimization of Hybrid PV/Wind/Battery system using Adaptive Genetic Algorithm-PID Controller"</span>, International Journal of Emerging Technology and advance Engineering, vol 7, pp. 215-223, 2017. (UGC Approved)
+                    <span className="font-bold">•</span> <span className="italic">"Optimization of Hybrid PV/Wind/Battery system using Adaptive Genetic Algorithm-PID Controller"</span>, International Journal of Emerging Technology and advance Engineering, vol 7, pp. 215-223, 2017. (UGC Approved)
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar and Dr.S.B.Shivakumar, <span className="italic">"Enhanced Evolutionary Computing Based Load Sensitive Hybrid RES in Belagavi, India"</span>, International Journal of Current Trends in Science and Technology, vol 7, pp. 20344-20366, 2017. (UGC Approved)
+                    <span className="font-bold">•</span> <span className="italic">"Enhanced Evolutionary Computing Based Load Sensitive Hybrid RES in Belagavi, India"</span>, International Journal of Current Trends in Science and Technology, vol 7, pp. 20344-20366, 2017. (UGC Approved)
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar and Dr.S.B.Shivakumar, <span className="italic">"Enhancement of Energy Management System of Hybrid Renewable System by HSS"</span>, International Journal of Innovative Research in Electrical, Electronics, Instrumentation and Control Engineering, vol 5, pp. 129-142, 2017. (Scribd and Index Copernicus, UGC Approved)
+                    <span className="font-bold">•</span> <span className="italic">"Enhancement of Energy Management System of Hybrid Renewable System by HSS"</span>, International Journal of Innovative Research in Electrical, Electronics, Instrumentation and Control Engineering, vol 5, pp. 129-142, 2017. (Scribd and Index Copernicus, UGC Approved)
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar and Dr.S.B.Shivakumar, <span className="italic">"Optimization of Hybrid Renewable Energy System using BPSO-PID based Load sensitive EMS"</span>, International Journal of Advanced Research in Electrical, Electronics and Instrumentation Engineering, vol 6, pp. 6877-6889, 2017. (Scribd and Index Copernicus, UGC Approved)
+                    <span className="font-bold">•</span> <span className="italic">"Optimization of Hybrid Renewable Energy System using BPSO-PID based Load sensitive EMS"</span>, International Journal of Advanced Research in Electrical, Electronics and Instrumentation Engineering, vol 6, pp. 6877-6889, 2017. (Scribd and Index Copernicus, UGC Approved)
                   </p>
                 </div>
 
                 <div className="border-b border-gray-200 pb-4">
                   <p className="text-gray-800 mb-2">
-                    <span className="font-bold">•</span> Sampathkumar and Dr.S.B.Shivakumar, <span className="italic">"FPA Based Power Quality Improvement for Hybrid Renewable energy system"</span>, International Jouranl of Engineering Research and Development, vol 13, pp. 31-44, 2017. (Index Copernicus, UGC Approved)
+                    <span className="font-bold">•</span> <span className="italic">"FPA Based Power Quality Improvement for Hybrid Renewable energy system"</span>, International Jouranl of Engineering Research and Development, vol 13, pp. 31-44, 2017. (Index Copernicus, UGC Approved)
                   </p>
                 </div>
               </div>
