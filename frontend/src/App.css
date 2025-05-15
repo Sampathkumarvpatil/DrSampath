@@ -124,25 +124,17 @@
   overflow: hidden;
 }
 
-/* Custom vertical video aspect ratio */
-.aspect-vertical {
-  position: relative;
-  padding-bottom: 177.78%; /* 9:16 Aspect Ratio - vertical video */
-  height: 0;
-  overflow: hidden;
-}
-
-.aspect-w-16 video,
-.aspect-vertical video {
+.aspect-w-16 video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This will cover the container and crop sides if needed */
+  object-fit: cover; /* Fills the container and crops as needed */
+  object-position: center; /* Keeps the focus on the center of the video */
 }
 
-/* Video container styling - simpler approach */
+/* Video container styling */
 .video-container {
   position: relative;
   overflow: hidden;
