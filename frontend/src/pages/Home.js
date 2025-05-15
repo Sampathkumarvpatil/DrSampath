@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -19,19 +18,34 @@ const Home = () => {
     title: "Business Unit Head & GenAI Principal Lead",
     bio:
       "Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions. Specialized in AI Meeting Superagents, GenAI infrastructure, and rapid product development across cross-functional teams.",
+    vision:
+      "My vision is to democratize AI technology by making sophisticated artificial intelligence accessible and impactful for organizations of all sizes. I believe in using AI as a force multiplier for human creativity and problem-solving capabilities.",
+    philosophy:
+      "I approach technology leadership with a philosophy that balances innovation with practical implementation. My work is guided by a commitment to ethical AI development and a focus on creating solutions that deliver measurable business value while pushing the boundaries of what's possible.",
+    expertise: [
+      "GenAI Implementation",
+      "AI/ML Architecture",
+      "Rapid Application Development",
+      "Business Unit Management",
+      "Innovation Leadership",
+      "AI Meeting Superagent Development",
+    ],
   };
 
   // Contact information
   const contactInfo = {
+    email: "drsampathkumarpatil@gmail.com",
+    phone: "+919353391603",
     social: [
       {
+        name: "LinkedIn",
         icon: <FaLinkedin className="text-xl" />,
         href: "https://www.linkedin.com/in/dr-sampathkumar-v-patil-80a6941b2",
       },
       {
+        name: "Facebook",
         icon: <FaFacebook className="text-xl" />,
-        href:
-          "https://www.facebook.com/share/16bX5FpvGL/?mibextid=wwXIfr",
+        href: "https://www.facebook.com/share/16bX5FpvGL/?mibextid=wwXIfr",
       },
     ],
   };
@@ -48,7 +62,7 @@ const Home = () => {
 
         <div className="container relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            {/* Left: text */}
+            {/* Text Content */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -123,7 +137,7 @@ const Home = () => {
               </motion.div>
             </motion.div>
 
-            {/* Right: circular video */}
+            {/* Video Avatar */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -131,33 +145,20 @@ const Home = () => {
               className="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center"
             >
               <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[30rem] lg:h-[30rem]">
-                {/* glowing background */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 blur-xl opacity-20 animate-pulse-slow" />
-                
-                {/* video with poster & controls */}
                 <video
                   src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
-                  poster="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/1fcf17d6-cbc4-4e1e-aff7-d11f4ed54c8e.png"
+                  alt="Dr. Sampath V. Patil - AI Technology"
                   className="relative z-10 rounded-full object-cover w-full h-full border-4 border-primary-400"
-                  controls
+                  autoPlay
+                  loop
+                  muted
                   playsInline
                 />
-
-                {/* overlay play-icon */}
-                <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-12 w-12 text-white opacity-75"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
               </div>
             </motion.div>
 
-            {/* Scroll indicator */}
+            {/* Scroll Indicator */}
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
               <motion.div
                 animate={{ y: [0, 10, 0] }}
