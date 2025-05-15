@@ -3,7 +3,7 @@ import sys
 from datetime import datetime
 
 class APITester:
-    def __init__(self, base_url="https://41921ae0-805b-4ed0-8c8d-b3279ba12eb2.preview.emergentagent.com"):
+    def __init__(self, base_url="https://1283e908-8520-4d00-b295-96555a9cae7c.preview.emergentagent.com"):
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0
@@ -64,7 +64,7 @@ class APITester:
         )
 
 class UIChangeVerifier:
-    def __init__(self, base_url="https://41921ae0-805b-4ed0-8c8d-b3279ba12eb2.preview.emergentagent.com"):
+    def __init__(self, base_url="https://1283e908-8520-4d00-b295-96555a9cae7c.preview.emergentagent.com"):
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0
