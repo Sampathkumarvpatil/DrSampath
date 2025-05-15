@@ -74,7 +74,7 @@ const Contact = () => {
     {
       icon: <FaCalendarAlt className="text-primary-600 text-xl" />,
       title: "Availability",
-      value: "Open for consulting and speaking engagements",
+      value: "24*7",
       link: null
     }
   ];
