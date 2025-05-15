@@ -50,6 +50,47 @@ const Home = () => {
     ],
   };
 
+  // Video player functionality
+  const videoRef = useRef(null);
+  const videoContainerRef = useRef(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    const containerElement = videoContainerRef.current;
+
+    const handlePlay = () => {
+      if (containerElement) {
+        containerElement.classList.add('playing');
+      }
+    };
+
+    const handlePause = () => {
+      if (containerElement) {
+        containerElement.classList.remove('playing');
+      }
+    };
+
+    const handleEnded = () => {
+      if (containerElement) {
+        containerElement.classList.remove('playing');
+      }
+    };
+
+    if (videoElement) {
+      videoElement.addEventListener('play', handlePlay);
+      videoElement.addEventListener('pause', handlePause);
+      videoElement.addEventListener('ended', handleEnded);
+    }
+
+    return () => {
+      if (videoElement) {
+        videoElement.removeEventListener('play', handlePlay);
+        videoElement.removeEventListener('pause', handlePause);
+        videoElement.removeEventListener('ended', handleEnded);
+      }
+    };
+  }, []);
+
   return (
     <div className="pt-16">
       {/* Hero Section */}
