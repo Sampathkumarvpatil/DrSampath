@@ -150,9 +150,7 @@ const Home = () => {
                   src="https://aimeetingsuperagent.s3.eu-north-1.amazonaws.com/drsam.mp4"
                   alt="Dr. Sampath V. Patil - AI Technology"
                   className="relative z-10 rounded-full object-cover w-full h-full border-4 border-primary-400"
-                  autoPlay
-                  loop
-                  muted
+                  controls
                   playsInline
                 />
               </div>
