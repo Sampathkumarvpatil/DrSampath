@@ -15,20 +15,24 @@ const Home = () => {
   // Personal details
   const personalInfo = {
     name: "Dr.Sampath.V.Patil",
-    title: "Business Unit Head & GenAI Principal Lead",
+    title: "Sr.Product Manager| GenAI Principal Lead | R&D Business Unit Head",
     bio:
-      "Technology executive with deep expertise in AI/ML and multiple doctoral credentials, combining innovation leadership with engineering excellence. Proven track record in building high-performing engineering teams, scaling next-gen AI systems, and delivering enterprise-grade solutions. Specialized in AI Meeting Superagents, GenAI infrastructure, and rapid product development across cross-functional teams.",
+      "Senior Product Manager with unique expertise in AI/ML and doctoral credentials, specializing in building data-driven product strategies and leading cross-functional teams. Proven track record in product roadmap development, user-centric design, and leveraging AI technologies to create innovative products that deliver exceptional user experiences. Expert in transforming complex AI capabilities into market-ready products with measurable business impact.",
     vision:
-      "My vision is to democratize AI technology by making sophisticated artificial intelligence accessible and impactful for organizations of all sizes. I believe in using AI as a force multiplier for human creativity and problem-solving capabilities.",
+      "My vision is to bridge the gap between cutting-edge AI technology and user needs by creating products that seamlessly integrate sophisticated AI capabilities into intuitive, user-friendly experiences. I believe in democratizing AI through thoughtful product design that makes advanced technology accessible to everyone.",
     philosophy:
-      "I approach technology leadership with a philosophy that balances innovation with practical implementation. My work is guided by a commitment to ethical AI development and a focus on creating solutions that deliver measurable business value while pushing the boundaries of what's possible.",
+      "I approach product management with a data-driven philosophy that prioritizes user needs while leveraging my deep technical AI background to identify unique product opportunities. My work focuses on creating products that not only solve real problems but also push the boundaries of what's possible through intelligent automation and AI-powered features.",
     expertise: [
-      "GenAI Implementation",
-      "AI/ML Architecture",
-      "Rapid Application Development",
-      "Business Unit Management",
-      "Innovation Leadership",
-      "AI Meeting Superagent Development",
+      "Product Strategy & Roadmapping",
+      "Cross-Functional Team Leadership",
+      "Data-Driven Product Decisions",
+      "AI-Powered Product Development",
+      "User Experience & Design Thinking",
+      "Stakeholder Management",
+      "Market Research & Competitive Analysis",
+      "Product Lifecycle Management",
+      "GenAI Product Integration",
+      "Agile Product Development",
     ],
   };
 
