@@ -380,7 +380,7 @@ const Home = () => {
               <h3 className="text-4xl md:text-5xl font-bold mb-2">
                 <AnimatedCounter end={3} prefix="" suffix="" />
               </h3>
-              <p className="text-gray-600">Months Timeline</p>
+              <p className="text-gray-600">Months Product Cycle</p>
             </motion.div>
           </div>
         </div>
