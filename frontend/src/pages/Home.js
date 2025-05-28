@@ -562,10 +562,10 @@ const Home = () => {
                   <span className="px-3 py-1 bg-primary-100 text-primary-800 text-xs font-semibold rounded-full">World Record</span>
                   <span className="ml-2 text-gray-400 text-sm">2023</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Unprecedented AI Features</h3>
+                <h3 className="text-xl font-bold mb-3">Unprecedented AI Product Launch</h3>
                 <p className="text-gray-600 mb-4">
-                  Created 35 AI-assisted news broadcasts, 100+ AI features, and 2500+ blogs in just 3 months, 
-                  setting a new standard for AI-powered productivity.
+                  Led the strategic development and launch of 35 AI-powered product features, managed 100+ product requirements, and coordinated 2500+ pieces of product content in just 3 months, 
+                  demonstrating exceptional product velocity and cross-functional leadership.
                 </p>
                 <Link to="/achievements" className="text-primary-600 hover:text-primary-800 font-medium flex items-center">
                   Learn more <span className="ml-1">→</span>
