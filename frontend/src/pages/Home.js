@@ -368,7 +368,7 @@ const Home = () => {
               <h3 className="text-4xl md:text-5xl font-bold mb-2">
                 <AnimatedCounter end={2500} prefix="" suffix="+" />
               </h3>
-              <p className="text-gray-600">Blogs Published</p>
+              <p className="text-gray-600">Product Content Pieces</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
