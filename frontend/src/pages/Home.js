@@ -708,7 +708,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-lg md:text-xl mb-8 max-w-3xl mx-auto"
           >
-            Let's discuss how my expertise in AI/ML architecture and rapid application development can benefit your projects.
+            Let's discuss how my expertise in product strategy, AI-powered product development, and cross-functional team leadership can drive your product initiatives forward.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
