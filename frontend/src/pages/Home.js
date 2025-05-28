@@ -589,13 +589,13 @@ const Home = () => {
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <span className="px-3 py-1 bg-secondary-100 text-secondary-800 text-xs font-semibold rounded-full">Innovation</span>
+                  <span className="px-3 py-1 bg-secondary-100 text-secondary-800 text-xs font-semibold rounded-full">Product Innovation</span>
                   <span className="ml-2 text-gray-400 text-sm">2025</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">First AI Meeting Superagent</h3>
+                <h3 className="text-xl font-bold mb-3">Revolutionary AI Meeting Product</h3>
                 <p className="text-gray-600 mb-4">
-                  Developed a revolutionary AI system that can participate in meetings autonomously, 
-                  taking notes, summarizing key points, and even responding to queries in real-time.
+                  Product managed the development of the world's first AI Meeting Superagent - a groundbreaking product that autonomously participates in meetings, 
+                  demonstrating innovative product vision and successful go-to-market execution for cutting-edge AI solutions.
                 </p>
                 <Link to="/achievements" className="text-primary-600 hover:text-primary-800 font-medium flex items-center">
                   Learn more <span className="ml-1">→</span>
