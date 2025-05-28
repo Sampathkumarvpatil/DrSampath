@@ -136,16 +136,7 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="text-xl md:text-2xl font-medium mb-6 text-gradient"
               >
-                {personalInfo.title.replace("R&D Business Unit Head", "R&D Business Unit Head").split("| ").map((part, index, array) => (
-                  <span key={index}>
-                    {part === "R&D Business Unit Head" ? (
-                      <span style={{ whiteSpace: 'nowrap' }}>{part}</span>
-                    ) : (
-                      part
-                    )}
-                    {index < array.length - 1 && "| "}
-                  </span>
-                ))}
+                Sr.Product Manager| GenAI Principal Lead | <span className="whitespace-nowrap">R&D Business Unit Head</span>
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
